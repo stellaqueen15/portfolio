@@ -1,0 +1,45 @@
+*,
+html {
+  padding: 0;
+}
+
+body {
+  background-color: rgb(160, 51, 173);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: white;
+  padding: 7px;
+  box-shadow: 0px 3px 8px #0000005a;
+}
+
+nav a {
+  transition: background-color 0.5s, border-radius 0.5s;
+  color: rgb(127, 35, 137);
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 30px;
+  border: 2px solid rgb(148, 48, 165);
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(148, 48, 165);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  background-color: rgba(117, 37, 157, 0.338);
+  padding: 2px;
+}
