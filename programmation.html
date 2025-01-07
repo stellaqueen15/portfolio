@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <p class="top-bar">
+      Brenda, étudiante en programmation web et mobile, et graphiste à temps
+      perdu
+    </p>
+    <div class="page">
+      <header>
+        <nav id="liens">
+          <a href="index.html" class="btn">Accueil</a>
+          <a href="" class="btn active">Programmation</a>
+          <a href="" class="btn">Graphisme</a>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <div class="bubble">
+            <p class="para">Projets web</p>
+          </div>
+          <div class="pointer"></div>
+        </div>
+
+        <div>
+          <div class="bubble blurred"></div>
+          <div class="pointer blurred"></div>
+        </div>
+
+        <div class="liste-projets">
+          <div class="projet">
+            <button class="primary" onclick="window.dialog.showModal();">
+              Open Dialog
+            </button>
+            <div class="masque">
+              <p>Site web transactionnel</p>
+            </div>
+          </div>
+
+          <dialog id="dialog">
+            <video width="750" controls>
+              <source src="Vidéo-Brenda.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <p>Description</p>
+            <div class="langages">
+              <p>Langages utilisées</p>
+              <p>Javascript, HTML/CSS, PHP</p>
+            </div>
+            <div class="outils">
+              <p>Outils utilisées</p>
+              <p>Vuetify.js, GitHub</p>
+            </div>
+            <button
+              onclick="window.dialog.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="masque">
+              <p>Site web transactionnel</p>
+            </div>
+          </div>
+
+          <div class="projet">
+            <div class="masque">
+              <p>Site web transactionnel</p>
+            </div>
+          </div>
+
+          <div class="projet">
+            <div class="masque">
+              <p>Site web transactionnel</p>
+            </div>
+          </div>
+
+          <div class="projet">
+            <div class="masque">
+              <p>Site web transactionnel</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>&copy; 2025 Brenda. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="https://github.com/TonNom">GitHub</a>
+          <a href="https://www.linkedin.com/in/TonNom">LinkedIn</a>
+          <a href="credits.html">Crédits</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  // Get the container element
+  var btnContainer = document.getElementById("liens");
+
+  // Get all buttons with class="btn" inside the container
+  var btns = btnContainer.getElementsByClassName("btn");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
