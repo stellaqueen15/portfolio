@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="quicksand">
     <p class="top-bar">
       Brenda, étudiante en programmation web et mobile, et graphiste à temps
       perdu
@@ -34,30 +40,57 @@
 
         <div class="liste-projets">
           <div class="projet">
-            <button class="primary" onclick="window.dialog.showModal();">
-              Open Dialog
-            </button>
+            <div class="projet1"></div>
             <div class="masque">
               <p>Site web transactionnel</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>Vuetify.js</p>
+                <p>PHP</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog1')">
+                Voir plus &#10132;
+              </button>
             </div>
           </div>
 
-          <dialog id="dialog">
+          <dialog id="dialog1">
             <video width="750" controls>
-              <source src="Vidéo-Brenda.mp4" type="video/mp4" />
+              <source src="" type="video/mp4" />
               Your browser does not support HTML video.
             </video>
-            <p>Description</p>
-            <div class="langages">
-              <p>Langages utilisées</p>
-              <p>Javascript, HTML/CSS, PHP</p>
-            </div>
-            <div class="outils">
-              <p>Outils utilisées</p>
-              <p>Vuetify.js, GitHub</p>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                    <p>Postman</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <button
-              onclick="window.dialog.close();"
+              onclick="this.parentNode.close();"
               aria-label="close"
               class="x"
             >
@@ -66,28 +99,333 @@
           </dialog>
 
           <div class="projet">
+            <div class="projet2"></div>
             <div class="masque">
-              <p>Site web transactionnel</p>
+              <p>Gestionnaire de notes</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PHP</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog2');">
+                Voir plus &#10132;
+              </button>
             </div>
           </div>
 
+          <dialog id="dialog2">
+            <video width="750" controls>
+              <source src="Videos/PROJET2.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>XAMPP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
           <div class="projet">
+            <div class="projet3"></div>
             <div class="masque">
-              <p>Site web transactionnel</p>
+              <p>Système de prise de rendez-vous</p>
+              <div class="langages">
+                <p>Wordpress</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog3');">
+                Voir plus &#10132;
+              </button>
             </div>
           </div>
 
+          <dialog id="dialog3">
+            <video width="750" controls>
+              <source src="Videos/PROJET3.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>Aucun</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Wordpress</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
           <div class="projet">
+            <div class="projet4"></div>
             <div class="masque">
-              <p>Site web transactionnel</p>
+              <p>Site web vitrine</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog4');">
+                Voir plus &#10132;
+              </button>
             </div>
           </div>
 
+          <dialog id="dialog4">
+            <video width="750" controls>
+              <source src="Videos/PROJET4.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
           <div class="projet">
+            <div class="projet5"></div>
             <div class="masque">
-              <p>Site web transactionnel</p>
+              <p>Site web utilisant une base de données</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PHP</p>
+                <p>MySQL</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog5');">
+                Voir plus &#10132;
+              </button>
             </div>
           </div>
+
+          <dialog id="dialog5">
+            <video width="750" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet6"></div>
+            <div class="masque">
+              <p>Gestion de contact</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog6');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog6">
+            <video width="750" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet7"></div>
+            <div class="masque">
+              <p>Site vitrine classique</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog7');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog7">
+            <video width="750" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
         </div>
       </main>
       <hr />
@@ -117,5 +455,14 @@
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
     });
+  }
+
+  function openDialog(dialogId) {
+    const dialog = document.getElementById(dialogId);
+    if (dialog) {
+      dialog.showModal();
+    } else {
+      console.error(`Dialog avec l'ID "${dialogId}" introuvable.`);
+    }
   }
 </script>
