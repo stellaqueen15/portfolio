@@ -313,6 +313,46 @@ footer > p {
   height: 200px;
 }
 
+.projet8 {
+  background-image: url(images/Projet8.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.projet9 {
+  background-image: url(images/Projet9.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.projet10 {
+  background-image: url(images/Projet10.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.projet11 {
+  background-image: url(images/Projet11.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.projet12 {
+  background-image: url(images/Projet12.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
 .masque {
   color: #9343b5;
   font-size: 18px;
