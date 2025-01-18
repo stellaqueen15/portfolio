@@ -1,69 +1,719 @@
-<div>
-  <div class="bubble">
-    <p class="para">À propos de moi</p>
-  </div>
-  <div class="pointer"></div>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body class="quicksand">
+    <p class="top-bar">
+      Brenda, étudiante en programmation web et mobile, et graphiste à temps
+      perdu
+    </p>
+    <div class="page">
+      <header>
+        <nav id="liens">
+          <a href="index.html" class="btn">Accueil</a>
+          <a href="programmation.html" class="active btn">Programmation</a>
+          <a href="graphisme.html" class="btn">Graphisme</a>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <div class="bubble">
+            <p class="para">Web</p>
+          </div>
+          <div class="pointer"></div>
+        </div>
 
-<div>
-  <div class="bubble blurred"></div>
-  <div class="pointer blurred"></div>
-</div>
-<div class="content-portfolio">
-  <h2>Qui suis-je ?</h2>
-  <div class="content-portfolio-image">
-    <div class="content-me">
-      <p>
-        Je suis une jeune programmeuse passionnée, spécialisée dans le
-        développement d'applications web et mobiles. Actuellement encore aux
-        études, je consacre une grande partie de mon temps libre à explorer et à
-        développer des projets dans ce domaine. En parallèle, je m'adonne au
-        graphisme, un domaine que j'explore de manière autodidacte. Bien que je
-        n'aie pas de formation formelle en graphisme, mes quatre années
-        d'utilisation quotidienne de Photoshop m'ont permis d'acquérir des
-        compétences solides.
-      </p>
+        <div>
+          <div class="bubble blurred"></div>
+          <div class="pointer blurred"></div>
+        </div>
 
-      <p>
-        Ce site est une véritable vitrine de mon travail, entièrement conçu et
-        réalisé de A à Z par mes soins. Je vous invite à explorer mes projets
-        pour découvrir de quoi je suis capable.
-      </p>
+        <div class="liste-projets">
+          <div class="projet">
+            <div class="projet1"></div>
+            <div class="masque">
+              <p>Site web transactionnel</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>Vuetify.js</p>
+                <p>PHP</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog1')">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog1">
+            <video width="750" controls>
+              <source src="" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de web qui consistait à ajouter une API
+                à un site déjà fonctionnel et de l'adapter en Vue.js/Vuetify.js.
+                De plus, l'utilisation de Stripe pour le rendre transactionnel
+                avec également l'ajout d'un panier.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Vuetify.js</p>
+                    <p>GitHub</p>
+                    <p>Postman</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet2"></div>
+            <div class="masque">
+              <p>Gestionnaire de notes</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PHP</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog2');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog2">
+            <video width="750" controls>
+              <source src="Videos/PROJET2.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de programmation web qui consistait à
+                développer un gestionnaire de notes (Todo list) en PHP, nous
+                familiarisant avec les opérations CRUD et nous faméliariser avec
+                le langage PHP dans son ensemble.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>XAMPP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet3"></div>
+            <div class="masque">
+              <p>Système de prise de rendez-vous</p>
+              <div class="langages">
+                <p>Wordpress</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog3');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog3">
+            <video width="750" controls>
+              <source src="Videos/PROJET3.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de collaboration à la conception
+                d'applications qui consistait à utiliser Wordpress pour
+                concevoir un système de rendez-vous, tout en utilisant la
+                méthode agile/SCRUM pour effectuer le projet. L'utilisation de
+                plusieurs modules a permis de respecter toutes les contraintes
+                qui nous ont été donné lors du projet.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>Aucun</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Wordpress</p>
+                    <p>SCRUM/Agile</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet4"></div>
+            <div class="masque">
+              <p>Site web vitrine</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog4');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog4">
+            <video width="750" controls>
+              <source src="Videos/PROJET4.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation web qui
+                consistait à utiliser une API gratuite de cocktail, et ainsi,
+                l'intégrer et le présenter sur notre site. En plus de cela, une
+                API de météo a également été utilisé, à la demande du
+                professeur.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Visual Studio Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet5"></div>
+            <div class="masque">
+              <p>Site web utilisant une base de données</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PHP</p>
+                <p>MySQL</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog5');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog5">
+            <video width="750" controls>
+              <source src="Videos/PROJET5.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation web qui
+                consistait à créer un site vitrine avec un système de connexion
+                à concevoir.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                    <p>PHP</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Visual Studio Code</p>
+                    <p>XAMPP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet6"></div>
+            <div class="masque">
+              <p>Gestion de contact</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog6');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog6">
+            <video width="300" controls>
+              <source src="Videos/PROJET6.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire en cours de programmation web qui consistait à
+                créer un système de gestion de contact en format mobile en
+                créant une API REST.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Visual Studio Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet7"></div>
+            <div class="masque">
+              <p>Site vitrine classique</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog7');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog7">
+            <video width="750" controls>
+              <source src="Videos/PROJET7.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation web qui
+                consistait à faire un site vitrine SPA.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Visual Studio Code</p>
+                    <p>En équipe de 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+        </div>
+
+        <div>
+          <div class="bubble">
+            <p class="para">Jeux</p>
+          </div>
+          <div class="pointer"></div>
+        </div>
+
+        <div>
+          <div class="bubble blurred"></div>
+          <div class="pointer blurred"></div>
+        </div>
+
+        <div class="liste-projets">
+          <div class="projet">
+            <div class="projet8"></div>
+            <div class="masque">
+              <p>Jeu vidéo</p>
+              <div class="langages">
+                <p>C#</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog8');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog8">
+            <video width="750" controls>
+              <source src="Videos/PROJET8.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation web qui
+                consistait à faire un site vitrine SPA.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>C#</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Microsoft Visual Studio</p>
+                    <p>Unity</p>
+                    <p>Tutoriel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+        </div>
+
+        <div>
+          <div class="bubble">
+            <p class="para">Divers</p>
+          </div>
+          <div class="pointer"></div>
+        </div>
+
+        <div>
+          <div class="bubble blurred"></div>
+          <div class="pointer blurred"></div>
+        </div>
+
+        <div class="liste-projets">
+          <div class="projet">
+            <div class="projet9"></div>
+            <div class="masque">
+              <p>Loterie</p>
+              <div class="langages">
+                <p>Java</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog9');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog9">
+            <video width="350" controls>
+              <source src="Videos/PROJET9.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation orienté objet qui
+                consistait à appliquer les bases de la programmation, nottament
+                la gestion de tableau, tout en expérimentant une interface.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>Java</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Eclipse</p>
+                    <p>En équipe de 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet10"></div>
+            <div class="masque">
+              <p>Jeu de mémoire</p>
+              <div class="langages">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog10');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog10">
+            <video width="450" controls>
+              <source src="Videos/PROJET10.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation web qui
+                consistait à s'entraîner à faire des programmes en JavaScript.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Visual Studio Code</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet11"></div>
+            <div class="masque">
+              <p>Gestionnaire de contact</p>
+              <div class="langages">
+                <p>Kotlin</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog11');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog11">
+            <video width="250" controls>
+              <source src="Videos/PROJET11.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation Android qui
+                consistait à faire un gestionnaire de contact, relié à une base
+                de données.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>Kotlin</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Android Studio</p>
+                    <p>En équipe de 2</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+
+          <div class="projet">
+            <div class="projet12"></div>
+            <div class="masque">
+              <p>Application de jeux (IOS)</p>
+              <div class="langages">
+                <p>Swift</p>
+              </div>
+              <button class="showProjet" onclick="openDialog('dialog12');">
+                Voir plus &#10132;
+              </button>
+            </div>
+          </div>
+
+          <dialog id="dialog12">
+            <video width="250" controls>
+              <source src="Videos/PROJET12.mp4" type="video/mp4" />
+              Your browser does not support HTML video.
+            </video>
+            <div class="info-projet">
+              <p class="desc">
+                Projet scolaire dans le cours de programmation IOS qui
+                consistait à créer une application contenant le jeu du pendu en
+                plusieurs versions. Une version film, en fournissant des indices
+                en début de partie, et une version dictionnaire. Tout en
+                attribuant des points pour chaque partie avec des données
+                persistantes.
+              </p>
+
+              <div class="sections">
+                <div class="section-langage">
+                  <h3>Langages</h3>
+                  <div class="langages">
+                    <p>Swift</p>
+                  </div>
+                </div>
+                <div class="section-outils">
+                  <h3>Outils</h3>
+                  <div class="outils">
+                    <p>Xcode</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              onclick="this.parentNode.close();"
+              aria-label="close"
+              class="x"
+            >
+              ❌
+            </button>
+          </dialog>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        <p>&copy; 2025 Brenda. Tous droits réservés.</p>
+        <div class="social-links">
+          <a href="https://github.com/TonNom">GitHub</a>
+          <a href="https://www.linkedin.com/in/TonNom">LinkedIn</a>
+          <a href="credits.html">Crédits</a>
+        </div>
+      </footer>
     </div>
-    <img src="images/ordinateur-prog.jpg" alt="" />
-  </div>
-  <a href="">Découvrir mes projets</a>
-</div>
-<div class="parcours">
-  <h2>Mon parcours</h2>
-
-  <div class="parcours-content">
-    <img src="images/Ordinateur-graph.jpg" alt="" />
-    <div class="parcours-texte">
-      <p>
-        Depuis mon plus jeune âge, j'ai été passionnée par le graphisme, avant
-        même de m'intéresser à la programmation. Le monde de la création m'a
-        toujours fasciné, que ce soit à travers la réalisation de miniatures
-        pour YouTube ou de montages vidéo. Cette première expérience m'a permis
-        de développer des compétences qui m'ont accompagnée dans la suite de mon
-        parcours.
-      </p>
-      <p>
-        Par la suite, je me suis investie dans un projet plus concret, où j'ai
-        pu mettre en pratique mes connaissances. C'est là que j'ai pris
-        conscience de ma véritable passion pour le développement. Au départ, je
-        m'intéressais à la programmation sans vraiment m'y plonger à fond. J'ai
-        commencé avec des cours en OCR, abordant le HTML et le CSS.
-      </p>
-      <p>
-        Puis, j'ai décidé de m'inscrire au programme de Technique de
-        l'informatique au Cégep, ce qui a véritablement renforcé mon intérêt
-        pour ce domaine. Mélanger le graphisme et la programmation est devenu un
-        combo que j'adore. Aujourd'hui, alors que je suis sur le point de
-        terminer mon programme, je suis fière des projets que j'ai réalisés et
-        des notes que j'ai accumulées. Mon parcours est un reflet de ma passion
-        et de mon travail acharné, même si je préfère rester modeste à ce sujet.
-      </p>
-    </div>
-  </div>
-</div>
+  </body>
+</html>
