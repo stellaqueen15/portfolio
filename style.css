@@ -4,7 +4,7 @@ html {
 }
 
 .quicksand {
-  font-family: "Quicksand", serif;
+  font-family: 'Quicksand', serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -14,14 +14,14 @@ body {
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(2) rotate(30)'><rect x='0' y='0' width='100%' height='100%' fill='%23e4e4e4ff'/><path d='M29.998 26.65v6.693zm-6.837 3.347h3.488zm10.185 0h3.489zm0 0a3.349 3.346 0 01-3.348 3.346 3.349 3.346 0 01-3.349-3.346 3.349 3.346 0 013.349-3.346 3.349 3.346 0 013.348 3.346zm-3.173-6.832c-1.978-.032-3.976.786-5.29 2.287-1.986 2.163-2.275 5.629-.727 8.113 1.45 2.442 4.522 3.736 7.287 3.116 3.067-.607 5.45-3.561 5.392-6.684.045-2.643-1.642-5.173-4.042-6.245a6.489 6.489 0 00-2.62-.587zM59.995 52.87v14.25zm-14.557 7.125h7.428zm21.687 0h7.427zm0 0a7.13 7.124 0 01-7.13 7.124 7.13 7.124 0 01-7.13-7.124 7.13 7.124 0 017.13-7.125 7.13 7.124 0 017.13 7.125zm-6.757-14.547c-4.212-.069-8.465 1.673-11.262 4.869-4.23 4.606-4.845 11.985-1.55 17.274 3.09 5.2 9.628 7.954 15.517 6.635 6.53-1.292 11.604-7.583 11.48-14.231.096-5.628-3.495-11.014-8.606-13.298-1.757-.813-3.665-1.217-5.58-1.249zM-.005 52.87v14.25zm-14.557 7.125h7.428zm21.687 0h7.427zm0 0a7.13 7.124 0 01-7.13 7.124 7.13 7.124 0 01-7.13-7.124 7.13 7.124 0 017.13-7.125 7.13 7.124 0 017.13 7.125zM.368 45.447c-4.212-.069-8.465 1.673-11.262 4.869-4.23 4.606-4.845 11.985-1.55 17.274 3.09 5.2 9.628 7.954 15.517 6.635 6.53-1.292 11.604-7.583 11.48-14.231.096-5.628-3.495-11.014-8.606-13.298-1.757-.813-3.665-1.217-5.58-1.249zM59.995-7.13V7.12zM45.438-.006h7.428zm21.687 0h7.427zm0 0a7.13 7.124 0 01-7.13 7.124 7.13 7.124 0 01-7.13-7.124 7.13 7.124 0 017.13-7.125 7.13 7.124 0 017.13 7.125zm-6.757-14.547c-4.212-.069-8.465 1.673-11.262 4.869C44.876-5.078 44.26 2.3 47.556 7.59c3.09 5.2 9.628 7.954 15.517 6.635 6.53-1.292 11.604-7.583 11.48-14.231.096-5.628-3.495-11.014-8.606-13.298-1.757-.813-3.665-1.217-5.58-1.249zM-.005-7.13V7.12zM-14.562-.006h7.428zm21.687 0h7.427zm0 0a7.13 7.124 0 01-7.13 7.124 7.13 7.124 0 01-7.13-7.124 7.13 7.124 0 017.13-7.125 7.13 7.124 0 017.13 7.125zM.368-14.553c-4.212-.069-8.465 1.673-11.262 4.869-4.23 4.606-4.845 11.985-1.55 17.274 3.09 5.2 9.628 7.954 15.517 6.635 6.53-1.292 11.604-7.583 11.48-14.231.096-5.628-3.495-11.014-8.606-13.298-1.757-.813-3.665-1.217-5.58-1.249z'  stroke-width='1' stroke='%2300000017' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
 .page {
-  width: 1450px;
+  width: 1150px;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -35,7 +35,7 @@ body {
 nav {
   background-color: white;
   padding: 7px;
-  width: 600px;
+  width: 530px;
   border-radius: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 45px;
@@ -44,7 +44,7 @@ nav {
 
 nav a {
   transition: background-color 0.5s, border-radius 0.5s;
-  width: 150px;
+  width: 125px;
   color: #9343b5;
   text-decoration: none;
   display: inline-block;
@@ -120,7 +120,7 @@ h1 {
   border-radius: 0 0 6px 0;
   margin-top: -22px;
   position: relative;
-  left: calc(0.5vw - 711px);
+  left: calc(0.5vw - 555px);
 }
 
 .blurred {
@@ -132,8 +132,7 @@ h1 {
   z-index: -1;
 }
 
-.content-portfolio,
-.parcours {
+.content-portfolio {
   background-color: rgb(255, 255, 255);
   color: #9343b5;
   padding: 20px;
@@ -149,89 +148,10 @@ h1 {
   margin-bottom: 40px;
 }
 
-.parcours {
-  margin-bottom: 40px;
-}
-
 .container {
   width: 50%;
   margin: 0 auto;
   text-align: left;
-}
-
-@keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-webkit-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-moz-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-o-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-.bar {
-  background-color: #eee;
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.bar::before {
-  content: attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
-}
-
-.bar.front::before {
-  background-color: #ffcc33;
-}
-
-.bar.back::before {
-  background-color: #a6cfe3;
-}
-
-.bar.learning::before {
-  width: calc(20% - 10px);
-}
-
-.bar.basic::before {
-  width: calc(40% - 10px);
-}
-
-.bar.intermediate::before {
-  width: calc(60% - 10px);
-}
-
-.bar.advanced::before {
-  width: calc(80% - 10px);
-}
-
-.bar.expert::before {
-  width: calc(100% - 10px);
 }
 
 .content-portfolio > a {
@@ -330,8 +250,8 @@ footer > p {
 
 .projet {
   background-color: white;
-  width: 400px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   border-radius: 60px 15px 60px 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -342,96 +262,96 @@ footer > p {
   background-image: url(images/Projet1.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet2 {
   background-image: url(images/Projet2.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet3 {
   background-image: url(images/Projet3.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet4 {
   background-image: url(images/Projet4.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet5 {
   background-image: url(images/Projet5.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet6 {
   background-image: url(images/Projet6.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet7 {
   background-image: url(images/Projet7.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet8 {
   background-image: url(images/Projet8.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet9 {
   background-image: url(images/Projet9.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet10 {
   background-image: url(images/Projet10.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet11 {
   background-image: url(images/Projet11.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projet12 {
   background-image: url(images/Projet12.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .masque {
@@ -466,7 +386,7 @@ footer > p {
   border: 1px solid #9343b5;
   padding: 5px;
   border-radius: 20px;
-  font-size: 18px;
+  font-size: 0.8rem;
   margin-bottom: -12px;
 }
 
@@ -475,10 +395,10 @@ footer > p {
   color: white;
   border: none;
   padding: 4px;
-  font-size: 18px;
+  font-size: 1rem;
   border-radius: 20px;
   margin-left: 7px;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .showProjet:hover {
@@ -489,8 +409,8 @@ footer > p {
 dialog {
   padding: 1rem 3rem;
   background: white;
-  width: 1100px;
-  height: 700px;
+  width: 700px;
+  height: 600px;
   padding-top: 2rem;
   border-radius: 20px;
   border: 0;
@@ -533,7 +453,7 @@ dialog {
     }
   }
   .desc {
-    font-size: 20px;
+    font-size: 1rem;
     color: #9343b5;
   }
   .section-langage,
@@ -544,7 +464,7 @@ dialog {
   }
   .section-langage > h3,
   .section-outils > h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     background-color: #9343b5;
     color: white;
@@ -578,110 +498,110 @@ dialog {
   background-image: url(images/Page_Creation.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph2 {
   background-image: url(images/Labo08_MarieBeauté.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph3 {
   background-image: url(images/Affiche_AnnivCity_2.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph4 {
   background-image: url(images/MPUG_Egypte.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph5 {
   background-image: url(images/MPUG_Sunshine_Run.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph6 {
   background-image: url(images/MPUP_AnnivCity.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph7 {
   background-image: url(images/MPUP_Espace_Pub.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph8 {
   background-image: url(images/Planning_Event.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph9 {
   background-image: url(images/Planning_Forum_Or.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph10 {
   background-image: url(images/Serenite_Aquatique_2.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph11 {
   background-image: url(images/Template_TS_2024.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph12 {
   background-image: url(images/Test_Insta.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph13 {
   background-image: url(images/The_Goat.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
 
 .projetGraph14 {
   background-image: url(images/Titre_Recrutement_Amba.png);
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
 }
