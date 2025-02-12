@@ -1,0 +1,196 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #fff, #c1c1c1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.liste-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 20px;
+  width: 100%;
+}
+
+.projet {
+  background-color: rgba(35, 5, 55, 1);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: -70px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.zoom {
+  text-decoration: none;
+  color: white;
+}
+
+.showProjet {
+  background-color: rgb(109, 35, 152);
+  width: 55px;
+  color: white;
+  border: none;
+  padding: 4px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-left: 7px;
+  margin-top: 23px;
+}
+
+.showProjet:hover {
+  cursor: pointer;
+}
+
+.masque {
+  color: white;
+  font-size: 1.1rem;
+  background-color: rgba(35, 5, 55, 1);
+  height: 100px;
+  margin-top: -15px;
+}
+
+.masque > p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 8px;
+  font-weight: 300;
+  margin-bottom: -5px;
+}
+
+.langages,
+.outils {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+}
+
+.langages > p,
+.outils > p {
+  margin-left: 6px;
+  color: #ffffff;
+  background-color: #9343b535;
+  border: 1px solid rgb(109, 35, 152);
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: -12px;
+}
+
+.projetGraph1 {
+  background-image: url(images/Page_Creation.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph2 {
+  background-image: url(images/Labo08_MarieBeauté.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph3 {
+  background-image: url(images/Affiche_AnnivCity_2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph4 {
+  background-image: url(images/MPUG_Egypte.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph5 {
+  background-image: url(images/MPUG_Sunshine_Run.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph6 {
+  background-image: url(images/MPUP_AnnivCity.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph7 {
+  background-image: url(images/MPUP_Espace_Pub.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph8 {
+  background-image: url(images/Planning_Event.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph9 {
+  background-image: url(images/Planning_Forum_Or.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph10 {
+  background-image: url(images/Serenite_Aquatique_2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph11 {
+  background-image: url(images/Template_TS_2024.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph12 {
+  background-image: url(images/Test_Insta.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph13 {
+  background-image: url(images/The_Goat.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projetGraph14 {
+  background-image: url(images/Titre_Recrutement_Amba.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}

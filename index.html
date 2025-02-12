@@ -7,76 +7,106 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="icon" href="images/FavIcon.png" type="image/x-icon" />
     <title>Portfolio</title>
   </head>
-  <body class="quicksand">
-    <p class="top-bar">
-      Brenda, étudiante en programmation web et mobile, et graphiste à temps
-      perdu
-    </p>
+  <body class="roboto-font">
     <div class="page">
       <header>
         <nav id="liens">
-          <a href="index.html" class="active btn">Accueil</a>
-          <a href="programmation.html" class="btn">Programmation</a>
-          <a href="graphisme.html" class="btn">Graphisme</a>
+          <a href="index.html" class="active btn" title="Accueil">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+          </a>
+          <a href="programmation.html" class="btn" title="Programmation">
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+          </a>
+          <a href="graphisme.html" class="btn" title="Graphisme">
+            <i class="fa-solid fa-palette" style="color: #ffffff"></i>
+          </a>
         </nav>
       </header>
       <main>
-        <h1>Bienvenu sur mon portfolio</h1>
-        <div>
-          <div class="bubble">
-            <p class="para">À propos</p>
-          </div>
-          <div class="pointer"></div>
+        <div class="contenu-presentation">
+          <h1>Brenda, étudiante en informatique et graphiste à temps perdu</h1>
+          <p>
+            Je suis une jeune programmeuse passionnée, spécialisée dans le
+            développement d'applications web et mobiles. Actuellement en cours
+            d'études, je consacre une grande partie de mon temps libre à
+            explorer et à développer des projets dans ce domaine. Parallèlement,
+            je me lance dans le graphisme, un domaine que j'explore de manière
+            autodidacte. Bien que je n'aie pas de formation formelle en
+            graphisme, mes quatre années d'utilisation quotidienne de Photoshop
+            m'ont permis de développer des compétences solides.
+          </p>
         </div>
 
-        <div>
-          <div class="bubble blurred"></div>
-          <div class="pointer blurred"></div>
-        </div>
-        <div class="content-portfolio">
-          <h2>Qui suis-je ?</h2>
-          <div class="content-portfolio-image">
-            <div class="content-me">
-              <p>
-                Je suis une jeune programmeuse passionnée, spécialisée dans le
-                développement d'applications web et mobiles. Actuellement en
-                cours d'études, je consacre une grande partie de mon temps libre
-                à explorer et à développer des projets dans ce domaine.
-                Parallèlement, je me lance dans le graphisme, un domaine que
-                j'explore de manière autodidacte. Bien que je n'aie pas de
-                formation formelle en graphisme, mes quatre années d'utilisation
-                quotidienne de Photoshop m'ont permis de développer des
-                compétences solides.
-              </p>
-              <p>
-                Ce site est une véritable vitrine de mon travail, entièrement
-                conçu et réalisé de A à Z par mes soins. Je vous invite à
-                explorer mes projets pour découvrir ce dont je suis capable.
-              </p>
+        <div class="e-card playing">
+          <div class="image"></div>
+
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+
+          <div class="infotop">
+            <h2>Langages vus</h2>
+            <div class="languages-list">
+              <div class="language">
+                <i class="fab fa-html5"></i>
+                <p class="lang-name">HTML</p>
+              </div>
+              <div class="language">
+                <i class="fab fa-css3-alt"></i>
+                <p class="lang-name">CSS</p>
+              </div>
+              <div class="language">
+                <i class="fab fa-js-square"></i>
+                <p class="lang-name">JavaScript</p>
+              </div>
+              <div class="language">
+                <i class="fa-brands fa-php"></i>
+                <p class="lang-name">PHP</p>
+              </div>
+              <div class="language">
+                <i class="fab fa-cuttlefish"></i>
+                <p class="lang-name">C#</p>
+              </div>
+              <div class="language">
+                <i class="fab fa-java"></i>
+                <p class="lang-name">Java</p>
+              </div>
+              <div class="language">
+                <i class="fa-brands fa-swift"></i>
+                <p class="lang-name">Swift</p>
+              </div>
+              <div class="language">
+                <i class="fa-brands fa-android"></i>
+                <p class="lang-name">Kotlin</p>
+              </div>
             </div>
-            <img src="images/ordinateur-prog.jpg" alt="" />
           </div>
-          <a href="programmation.html">Découvrir mes projets</a>
         </div>
       </main>
       <hr />
       <footer>
         <p>&copy; 2025 Brenda. Tous droits réservés.</p>
         <div class="social-links">
-          <a href="https://github.com/stellaqueen15">GitHub</a>
+          <a href="https://github.com/stellaqueen15"
+            ><i class="fa-brands fa-github"></i
+          ></a>
           <a
             href="https://unsplash.com/fr/@afgprogrammer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Crédits</a
-          >
+            ><i class="fa-solid fa-hand-holding-heart"></i
+          ></a>
         </div>
       </footer>
-      <p>Le responsive arrive prochainement...</p>
     </div>
   </body>
 </html>

@@ -4,41 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="programmation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="icon" href="images/FavIcon.png" type="image/x-icon" />
     <title>Portfolio</title>
   </head>
-  <body class="quicksand">
-    <p class="top-bar">
-      Brenda, étudiante en programmation web et mobile, et graphiste à temps
-      perdu
-    </p>
+  <body class="roboto-font">
     <div class="page">
       <header>
         <nav id="liens">
-          <a href="index.html" class="btn">Accueil</a>
-          <a href="programmation.html" class="active btn">Programmation</a>
-          <a href="graphisme.html" class="btn">Graphisme</a>
+          <a href="index.html" class="btn" title="Accueil">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+          </a>
+          <a href="programmation.html" class="active btn" title="Programmation">
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+          </a>
+          <a href="graphisme.html" class="btn" title="Graphisme">
+            <i class="fa-solid fa-palette" style="color: #ffffff"></i>
+          </a>
         </nav>
       </header>
       <main>
-        <div>
-          <div class="bubble">
-            <p class="para">Web</p>
-          </div>
-          <div class="pointer"></div>
-        </div>
-
-        <div>
-          <div class="bubble blurred"></div>
-          <div class="pointer blurred"></div>
-        </div>
-
+        <h2>Projets web</h2>
         <div class="liste-projets">
           <div class="projet">
             <div class="projet1"></div>
@@ -52,7 +49,7 @@
                 <p>PHP</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog1')">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -113,7 +110,7 @@
                 <p>PHP</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog2');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -177,7 +174,7 @@
                 <p>Wordpress</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog3');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -244,7 +241,7 @@
                 <p>Javascript</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog4');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -312,7 +309,7 @@
                 <p>MySQL</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog5');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -379,7 +376,7 @@
                 <p>Javascript</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog6');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -444,7 +441,7 @@
                 <p>Javascript</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog7');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -500,18 +497,7 @@
           </dialog>
         </div>
 
-        <div>
-          <div class="bubble">
-            <p class="para">Jeux</p>
-          </div>
-          <div class="pointer"></div>
-        </div>
-
-        <div>
-          <div class="bubble blurred"></div>
-          <div class="pointer blurred"></div>
-        </div>
-
+        <h2>Projets Jeu vidéo</h2>
         <div class="liste-projets">
           <div class="projet">
             <div class="projet8"></div>
@@ -521,7 +507,7 @@
                 <p>C#</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog8');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -578,18 +564,7 @@
           </dialog>
         </div>
 
-        <div>
-          <div class="bubble">
-            <p class="para">Divers</p>
-          </div>
-          <div class="pointer"></div>
-        </div>
-
-        <div>
-          <div class="bubble blurred"></div>
-          <div class="pointer blurred"></div>
-        </div>
-
+        <h2>Projets divers</h2>
         <div class="liste-projets">
           <div class="projet">
             <div class="projet9"></div>
@@ -599,7 +574,7 @@
                 <p>Java</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog9');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -656,7 +631,7 @@
                 <p>Javascript</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog10');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -711,7 +686,7 @@
                 <p>Kotlin</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog11');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -765,7 +740,7 @@
                 <p>Swift</p>
               </div>
               <button class="showProjet" onclick="openDialog('dialog12');">
-                Voir plus &#10132;
+                Voir
               </button>
             </div>
           </div>
@@ -819,11 +794,13 @@
       <footer>
         <p>&copy; 2025 Brenda. Tous droits réservés.</p>
         <div class="social-links">
-          <a href="https://github.com/stellaqueen15">GitHub</a>
+          <a href="https://github.com/stellaqueen15"
+            ><i class="fa-brands fa-github"></i
+          ></a>
           <a
             href="https://unsplash.com/fr/@afgprogrammer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Crédits</a
-          >
+            ><i class="fa-solid fa-hand-holding-heart"></i
+          ></a>
         </div>
       </footer>
     </div>

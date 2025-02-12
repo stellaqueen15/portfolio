@@ -1,0 +1,258 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #fff, #c1c1c1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.liste-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 20px;
+  width: 100%;
+}
+
+.projet {
+  background-color: rgba(35, 5, 55, 1);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: -70px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.projet1 {
+  background-image: url(images/Projet1.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet2 {
+  background-image: url(images/Projet2.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet3 {
+  background-image: url(images/Projet3.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet4 {
+  background-image: url(images/Projet4.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet5 {
+  background-image: url(images/Projet5.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet6 {
+  background-image: url(images/Projet6.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet7 {
+  background-image: url(images/Projet7.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet8 {
+  background-image: url(images/Projet8.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet9 {
+  background-image: url(images/Projet9.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet10 {
+  background-image: url(images/Projet10.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet11 {
+  background-image: url(images/Projet11.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.projet12 {
+  background-image: url(images/Projet12.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.masque {
+  color: white;
+  font-size: 1.1rem;
+  background-color: rgba(35, 5, 55, 1);
+  height: 100px;
+  margin-top: -15px;
+}
+
+.masque > p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 8px;
+  font-weight: 300;
+  margin-bottom: -5px;
+}
+
+.langages,
+.outils {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+}
+
+.langages > p,
+.outils > p {
+  margin-left: 6px;
+  color: #ffffff;
+  background-color: #9343b535;
+  border: 1px solid rgb(109, 35, 152);
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: -12px;
+}
+
+.showProjet {
+  background-color: rgb(109, 35, 152);
+  width: 55px;
+  color: white;
+  border: none;
+  padding: 4px;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-left: 7px;
+  margin-top: 23px;
+}
+
+.showProjet:hover {
+  cursor: pointer;
+}
+
+/*Dialog Styles*/
+dialog {
+  padding: 1rem 3rem;
+  background: rgba(35, 5, 55, 1);
+  width: 700px;
+  height: 600px;
+  padding-top: 2rem;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s ease both;
+  &::backdrop {
+    animation: fadeIn 1s ease both;
+    background: rgba(132, 47, 149, 0.171);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+  }
+  .x {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.1);
+    }
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 0;
+    a {
+      &:visited {
+        color: rgb(var(--vs-primary));
+      }
+    }
+  }
+  .desc {
+    font-size: 1rem;
+    color: white;
+  }
+  .section-langage,
+  .section-outils {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .section-langage > h3,
+  .section-outils > h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 4px;
+    margin-bottom: -5px;
+    background: linear-gradient(to bottom, #fff, #c1c1c1);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .info-projet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(86, 23, 122);
+    border-radius: 20px;
+    height: 250px;
+    margin-top: 10px;
+  }
+  .sections {
+    display: flex;
+    justify-content: center;
+  }
+}
