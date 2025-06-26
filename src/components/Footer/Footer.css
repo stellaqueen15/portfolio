@@ -1,0 +1,40 @@
+.footer {
+  color: #f1f1f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-content a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+  color: rgb(145, 28, 191);
+}
+
+.footer-note {
+  opacity: 0.6;
+  text-align: center;
+}
+
+.separator {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 60%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.148);
+}
