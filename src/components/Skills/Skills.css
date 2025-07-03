@@ -84,3 +84,18 @@
   font-weight: 600;
   font-size: 1.05rem;
 }
+
+@media screen and (width <= 1125px) {
+  .skills-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (width <= 388px) {
+  .skill {
+    width: 190px;
+  }
+}

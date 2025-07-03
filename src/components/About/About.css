@@ -121,3 +121,39 @@
 .about-information i {
   font-size: 1.6rem;
 }
+
+@media screen and (width <= 1246px) {
+  .about-information {
+    padding: 20px;
+  }
+}
+
+@media screen and (width <= 1027px) {
+  .about-information {
+    padding: 15px;
+  }
+
+  .informations {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+
+  .about-second-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: left;
+    font-size: 1.125rem;
+    color: white;
+    line-height: 1.75;
+    width: 80%;
+  }
+}

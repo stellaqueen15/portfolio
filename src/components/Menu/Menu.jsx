@@ -21,7 +21,7 @@ function Menu() {
           </a>
         </div>
         <a href="mailto:brendakmpro@gmail.com" className="btn-contact">
-          Me contacter
+          Contact
         </a>
       </nav>
     </>

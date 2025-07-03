@@ -65,3 +65,40 @@ h1 {
   height: 63px;
   background: rgba(175, 155, 198, 0.31);
 }
+
+@media screen and (width <= 800px) {
+  h1 {
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  .hability > h2 {
+    font-weight: 500;
+    color: #a795bc;
+    font-size: 1.1rem;
+  }
+
+  .hability > p {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  }
+}
+
+@media screen and (width <= 367px) {
+  h1 {
+    font-size: 2.3rem;
+    width: 80%;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    width: 80%;
+  }
+}
