@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   flex-wrap: wrap;
 }
 
@@ -23,11 +23,11 @@
 }
 
 .footer-content a:hover {
-  color: rgb(145, 28, 191);
+  color: #7d629b;
 }
 
 .footer-note {
-  opacity: 0.6;
+  opacity: 0.8;
   text-align: center;
 }
 
@@ -36,5 +36,5 @@
   max-width: 600px;
   width: 60%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.148);
+  background-color: rgba(255, 255, 255, 0.26);
 }

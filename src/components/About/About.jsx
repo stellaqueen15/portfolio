@@ -1,5 +1,6 @@
 import '../../App.css';
 import '../About/About.css';
+import Image from '../../assets/About_Image.jpg';
 
 function About() {
   return (
@@ -13,8 +14,8 @@ function About() {
                 <div class="image-wrapper">
                   <img
                     className="about-image"
-                    src="https://www.ifocop.fr/media/2023/08/la-difference-entre-un-developpeur-web-integrateur-et-un-webdesigner-ifocop.jpg"
-                    alt=""
+                    src={Image}
+                    alt="Une personne qui tape du code sur son clavier."
                   />
                 </div>
               </div>

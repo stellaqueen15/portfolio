@@ -20,7 +20,7 @@ function Menu() {
             <i class="fi fi-rr-brain-circuit"></i>
           </a>
         </div>
-        <a href="" className="btn-contact">
+        <a href="mailto:brendakmpro@gmail.com" className="btn-contact">
           Me contacter
         </a>
       </nav>
