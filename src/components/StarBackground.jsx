@@ -35,7 +35,7 @@ const StarBackground = () => {
         repeat: 'no-repeat',
         size: 'cover',
       },
-      fpsLimit: 120,
+      fpsLimit: 130,
       interactivity: {
         events: {
           onClick: {
@@ -69,12 +69,15 @@ const StarBackground = () => {
           random: false,
           speed: 4,
           straight: false,
+          outModes: {
+            default: 'bounce',
+          },
         },
         number: {
           density: {
             enable: true,
           },
-          value: 5,
+          value: 15,
         },
         opacity: {
           value: 0.3,
@@ -83,7 +86,7 @@ const StarBackground = () => {
           type: 'circle',
         },
         size: {
-          value: { min: 20, max: 70 },
+          value: { min: 30, max: 120 },
         },
       },
       detectRetina: true,

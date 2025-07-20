@@ -10,15 +10,8 @@ import StarBackground from './components/StarBackground';
 function App() {
   return (
     <>
+      <StarBackground />
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <div class="background-circles">
-          <div class="circle circle1"></div>
-          <div class="circle circle2"></div>
-          <div class="circle circle3"></div>
-          <div class="circle circle4"></div>
-          <div class="circle circle5"></div>
-          <div class="circle circle6"></div>
-        </div>
         <Menu />
         <Hero />
         <About />
