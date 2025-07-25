@@ -14,17 +14,7 @@ function Projects() {
           <div className="project-card">
             <div className="project-image">
               <img src="https://i.imgur.com/MHmS1zB.png" alt="Joo Project" />
-              <div className="overlay">
-                <span>
-                  <a
-                    href="https://www.soccershop.infinityfreeapp.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Voir le projet
-                  </a>
-                </span>
-              </div>
+              <div className="overlay"></div>
             </div>
             <div className="project-content">
               <div className="project-title-content">
