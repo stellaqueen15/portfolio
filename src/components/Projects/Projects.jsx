@@ -1,6 +1,6 @@
 import '../../App.css';
 import '../Projects/Projects.css';
-import ProjectClarkStJean from '../../assets/Projet_ClarkStJean.png';
+import ProjectCineHelp from '../../assets/Projet_CineHelp.png';
 import ProjectSiteVitrine from '../../assets/Projet_SiteVitrine.png';
 import ImageProjectSiteVitrine from '../../assets/ProjetVitrine_Image.png';
 import InProgress from '../../assets/InProgress.webp';
@@ -14,7 +14,17 @@ function Projects() {
           <div className="project-card">
             <div className="project-image">
               <img src="https://i.imgur.com/MHmS1zB.png" alt="Joo Project" />
-              <div className="overlay"></div>
+              <div className="overlay">
+                <span>
+                  <a
+                    href="https://youtu.be/qR940fKm1r4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le projet
+                  </a>
+                </span>
+              </div>
             </div>
             <div className="project-content">
               <div className="project-title-content">
@@ -36,25 +46,31 @@ function Projects() {
 
           <div className="project-card">
             <div className="project-image">
-              <img
-                src={ProjectClarkStJean}
-                alt="Section Hero du site Clark St Jean"
-              />
-              <div className="overlay"></div>
+              <img src={ProjectCineHelp} alt="Section Hero du site CineHelp" />
+              <div className="overlay">
+                <span>
+                  <a
+                    href="https://cine-help.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le projet
+                  </a>
+                </span>
+              </div>
             </div>
             <div className="project-content">
               <div className="project-title-content">
-                <h3 className="project-title">Clark St-Jean</h3>
+                <h3 className="project-title">CinéHelp</h3>
                 <p>• Terminé</p>
               </div>
               <p className="project-desc">
-                La refonte d'un site archaïque dans de nouvelles technologies et
-                un design moderne.
+                Réalisation d'un site web vitrine pour un organisme dans le
+                monde du cinéma.
               </p>
               <ul className="project-stack">
-                <li>Next.js</li>
+                <li>React</li>
                 <li>TailwindCSS</li>
-                <li>i18n</li>
               </ul>
             </div>
           </div>
