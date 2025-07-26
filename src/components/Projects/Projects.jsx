@@ -99,7 +99,7 @@ function Projects() {
                 <p>• Terminé</p>
               </div>
               <p className="project-desc">
-                Une site vitrine d'une interprète chinoise pour afficher ses
+                Un site vitrine d'une interprète chinoise pour afficher ses
                 services sur un site intuitive, tout en utilisant un design au
                 goût du jour.
               </p>
