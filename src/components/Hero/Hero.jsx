@@ -19,12 +19,12 @@ function Hero() {
           <div className="hability-section">
             <div className="hability">
               <h2>Front-end</h2>
-              <p>60%</p>
+              <p>55%</p>
             </div>
             <div className="hability-separator"></div>
             <div className="hability">
               <h2>Back-end</h2>
-              <p>40%</p>
+              <p>45%</p>
             </div>
           </div>
         </div>
