@@ -11,11 +11,12 @@ import PHP from '../../assets/Icon_PHP.svg';
 import MySQL from '../../assets/Icon_MySQL.png';
 import ExpressJS from '../../assets/Icon_ExpressJS.png';
 import PostgreSQL from '../../assets/Icon_PostgreSQL.png';
-import Java from '../../assets/Icon_Java.svg';
+import Java from '../../assets/Icon_Java.webp';
 import C from '../../assets/Icon_C.webp';
 import Kotlin from '../../assets/Icon_Kotlin.png';
-import Swift from '../../assets/Icon_Swift.svg';
-import Figma from '../../assets/Icon_Figma.png';
+import Swift from '../../assets/Icon_Swift.png';
+import Figma from '../../assets/Icon_Figma.webp';
+import Photoshop from '../../assets/Icon_Photoshop.png';
 
 function Skills() {
   return (
@@ -93,11 +94,7 @@ function Skills() {
               <h3>Autres langages/Outils</h3>
               <div className="skills-row">
                 <div className="skill">
-                  <img
-                    src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
-                    alt=""
-                    className="skill-image"
-                  />
+                  <img src={Java} alt="" className="skill-image" />
                   <p>Java</p>
                 </div>
 
@@ -107,11 +104,7 @@ function Skills() {
                 </div>
 
                 <div className="skill">
-                  <img
-                    src="https://images.seeklogo.com/logo-png/27/2/kotlin-logo-png_seeklogo-273591.png"
-                    alt=""
-                    className="skill-image"
-                  />
+                  <img src={Kotlin} alt="" className="skill-image" />
                   <p>Kotlin</p>
                 </div>
 
@@ -121,20 +114,12 @@ function Skills() {
                 </div>
 
                 <div className="skill">
-                  <img
-                    src="https://images.icon-icons.com/2429/PNG/512/figma_logo_icon_147289.png"
-                    alt=""
-                    className="skill-image"
-                  />
+                  <img src={Figma} alt="" className="skill-image" />
                   <p>Figma</p>
                 </div>
 
                 <div className="skill">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
-                    alt=""
-                    className="skill-image"
-                  />
+                  <img src={Photoshop} alt="" className="skill-image" />
                   <p>Photoshop</p>
                 </div>
               </div>
