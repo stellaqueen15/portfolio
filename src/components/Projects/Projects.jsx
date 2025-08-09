@@ -1,7 +1,6 @@
 import '../../App.css';
 import '../Projects/Projects.css';
 import ProjectCineHelp from '../../assets/Projet_CineHelp.png';
-import ProjectSiteVitrine from '../../assets/Projet_SiteVitrine.png';
 import ImageProjectSiteVitrine from '../../assets/ProjetVitrine_Image.png';
 import InProgress from '../../assets/InProgress.webp';
 
@@ -84,7 +83,7 @@ function Projects() {
               <div className="overlay">
                 <span>
                   <a
-                    href={ProjectSiteVitrine}
+                    href="https://exemple-site-vitrine.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
