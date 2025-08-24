@@ -1,22 +1,22 @@
-import '../../App.css';
-import '../Skills/Skills.css';
-import HTML from '../../assets/Icon_HTML.png';
-import CSS from '../../assets/Icon_CSS.png';
-import JS from '../../assets/Icon_JS.png';
-import React from '../../assets/Icon_React.webp';
-import Nextjs from '../../assets/Icon_NextJS.svg';
-import Svelte from '../../assets/Icon_Svelte.png';
-import TailwindCSS from '../../assets/Icon_TailwindCSS.webp';
-import PHP from '../../assets/Icon_PHP.svg';
-import MySQL from '../../assets/Icon_MySQL.png';
-import ExpressJS from '../../assets/Icon_ExpressJS.png';
-import PostgreSQL from '../../assets/Icon_PostgreSQL.png';
-import Java from '../../assets/Icon_Java.webp';
-import C from '../../assets/Icon_C.webp';
-import Kotlin from '../../assets/Icon_Kotlin.png';
-import Swift from '../../assets/Icon_Swift.png';
-import Figma from '../../assets/Icon_Figma.webp';
-import Photoshop from '../../assets/Icon_Photoshop.png';
+import "../../App.css";
+import "../Skills/Skills.css";
+import HTML from "../../assets/Icon_HTML.png";
+import CSS from "../../assets/Icon_CSS.png";
+import JS from "../../assets/Icon_JS.png";
+import React from "../../assets/Icon_React.webp";
+import Nextjs from "../../assets/Icon_NextJS.svg";
+import Svelte from "../../assets/Icon_Svelte.png";
+import TailwindCSS from "../../assets/Icon_TailwindCSS.webp";
+import PHP from "../../assets/Icon_PHP.svg";
+import MySQL from "../../assets/Icon_MySQL.png";
+import ExpressJS from "../../assets/Icon_ExpressJS.png";
+import PostgreSQL from "../../assets/Icon_PostgreSQL.png";
+import Java from "../../assets/Icon_Java.webp";
+import C from "../../assets/Icon_C.webp";
+import Kotlin from "../../assets/Icon_Kotlin.png";
+import Swift from "../../assets/Icon_Swift.png";
+import Figma from "../../assets/Icon_Figma.webp";
+import Photoshop from "../../assets/Icon_Photoshop.png";
 
 function Skills() {
   return (

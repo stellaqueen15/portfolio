@@ -27,14 +27,20 @@ h1 {
   align-items: center;
   padding: 15px;
   gap: 20px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.61) 0%,
-    rgba(234, 234, 234, 0.61) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.322);
   border-radius: 17px;
+
+  /* Ombres externes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.208); /* effet lumineux intérieur */
+
+  /* Reflet léger en haut */
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
+  );
   margin-top: 30px;
   transition: all 0.3s;
 }
@@ -49,14 +55,14 @@ h1 {
 
 .hability > h2 {
   font-weight: 500;
-  color: #a795bc;
+  color: #9479b4;
   font-size: 1.17rem;
 }
 
 .hability > p {
   font-size: 2.7rem;
   font-weight: 700;
-  color: white;
+  color: rgba(255, 255, 255, 0.871);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 

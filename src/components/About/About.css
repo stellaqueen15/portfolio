@@ -53,7 +53,7 @@
 }
 
 .image-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 50%;
@@ -76,7 +76,19 @@
   align-items: center;
   width: 280px;
   height: 280px;
-  background-color: rgba(255, 255, 255, 0.351);
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.322);
+
+  /* Ombres externes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.208); /* effet lumineux intérieur */
+
+  /* Reflet léger en haut */
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
+  );
   border-radius: 50%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
 }
@@ -98,16 +110,22 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(227, 227, 227, 0.55) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.21);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.322);
   border-radius: 17px;
+
+  /* Ombres externes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.208); /* effet lumineux intérieur */
+
+  /* Reflet léger en haut */
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
+  );
   padding: 15px;
-  color: #9e87b9;
+  color: #9479b4;
   font-weight: 500;
   font-size: 1.05rem;
   cursor: pointer;

@@ -11,14 +11,20 @@ nav {
   z-index: 10;
   width: 370px;
   box-sizing: border-box;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.55) 0%,
-    rgba(227, 227, 227, 0.55) 100%
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 17px;
+
+  /* Ombres externes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.208); /* effet lumineux intérieur */
+
+  /* Reflet léger en haut */
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
   );
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.07);
-  border-radius: 18px;
   backdrop-filter: blur(4px);
 }
 
@@ -31,7 +37,7 @@ nav {
   padding: 0px 7px;
   border-radius: 20px;
   font-size: 1.6rem;
-  color: #aa91c7;
+  color: #9479b4;
   text-align: center;
   white-space: nowrap;
 }
