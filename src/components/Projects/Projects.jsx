@@ -1,8 +1,8 @@
-import '../../App.css';
-import '../Projects/Projects.css';
-import ProjectCineHelp from '../../assets/Projet_CineHelp.png';
-import ImageProjectSiteVitrine from '../../assets/ProjetVitrine_Image.png';
-import InProgress from '../../assets/InProgress.webp';
+import "../../App.css";
+import "../Projects/Projects.css";
+import ProjectCineHelp from "../../assets/Projet_CineHelp.png";
+import ImageProjectSiteVitrine from "../../assets/ProjetVitrine_Image.png";
+import InProgress from "../../assets/InProgress.webp";
 
 function Projects() {
   return (
@@ -49,7 +49,7 @@ function Projects() {
               <div className="overlay">
                 <span>
                   <a
-                    href="https://cine-help.netlify.app/"
+                    href="https://cine-help-now.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
