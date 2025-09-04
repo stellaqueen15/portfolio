@@ -117,13 +117,10 @@ function Projects() {
             </div>
             <div className="project-content">
               <div className="project-title-content">
-                <h3 className="project-title">RP AdminTool</h3>
+                <h3 className="project-title">Admin Tool</h3>
                 <p>• En cours</p>
               </div>
-              <p className="project-desc">
-                Une application web qui permet de faciliter les communautés de
-                jeux de rôles.
-              </p>
+              <p className="project-desc">À suivre...</p>
               <ul className="project-stack">
                 <li>React</li>
                 <li>Express.js</li>
