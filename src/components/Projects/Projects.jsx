@@ -3,6 +3,7 @@ import "../Projects/Projects.css";
 import ProjectCineHelp from "../../assets/Projet_CineHelp.png";
 import ImageProjectSiteVitrine from "../../assets/ProjetVitrine_Image.png";
 import InProgress from "../../assets/InProgress.webp";
+import Daquizz from "../../assets/Projet_Daquizz.png";
 
 function Projects() {
   return (
@@ -106,6 +107,38 @@ function Projects() {
                 <li>SvelteKit</li>
                 <li>TailwindCSS</li>
                 <li>i18n</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="project-image">
+              <img src={Daquizz} alt="Page d'accueil du quizz" />
+              <div className="overlay">
+                <span>
+                  <a
+                    href="https://daquizz.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le projet
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="project-content">
+              <div className="project-title-content">
+                <h3 className="project-title">DaQuizz</h3>
+                <p>• En évolution constante</p>
+              </div>
+              <p className="project-desc">
+                Un jeu de quizz porté sur le monde du développement. Porté sur
+                un apprentissage appronfondi du backend. Authentification
+                sécurisé et complète à venir.
+              </p>
+              <ul className="project-stack">
+                <li>React</li>
+                <li>Supabase</li>
               </ul>
             </div>
           </div>
