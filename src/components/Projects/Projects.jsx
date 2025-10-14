@@ -134,7 +134,7 @@ function Projects() {
               <p className="project-desc">
                 Un jeu de quizz porté sur le monde du développement. Porté sur
                 un apprentissage appronfondi du backend. Authentification
-                sécurisé et complète à venir.
+                sécurisée et complète à venir.
               </p>
               <ul className="project-stack">
                 <li>React</li>
