@@ -1,6 +1,6 @@
-import '../../App.css';
-import '../About/About.css';
-import Image from '../../assets/About_Image.jpg';
+import "../../App.css";
+import "../About/About.css";
+import Image from "../../assets/About_Image.jpg";
 
 function About() {
   return (
@@ -21,16 +21,15 @@ function About() {
               </div>
               <div className="about-second-part">
                 <p className="about-text">
-                  Je suis une jeune développeuse passionnée, spécialisée dans le
-                  développement web avec une approche à la fois créative et
-                  technique. Avant de me plonger dans la programmation, j’ai
-                  exploré le graphisme en autodidacte, ce qui m’a permis de
-                  développer un sens du design que j’intègre dans mes projets.
-                  Étant diplômée en informatique, option programmation, je suis
-                  actuellement développeuse junior avec un début d'expérience
-                  concrète dans le monde du développement web. Toujours curieuse
-                  et motivée, je cherche à évoluer dans des projets stimulants
-                  et humains.
+                  Je me présente : je suis Brenda, une jeune développeuse
+                  diplômée d’un DEC en informatique. Je me suis spécialisée dans
+                  la programmation web et mobile, en tirant parti des
+                  compétences que j’ai acquises en tant que graphiste
+                  autodidacte. Aujourd’hui, je cherche à appliquer avec rigueur
+                  toutes mes compétences, tout en continuant d’apprendre et de
+                  me perfectionner. La meilleure chose qui pourrait m’arriver
+                  serait d’intégrer un projet qui me permette de m’aligner avec
+                  ces objectifs, et surtout, de le faire dans la bonne humeur !
                 </p>
                 <div className="informations">
                   <div className="about-information">
