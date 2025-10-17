@@ -113,38 +113,6 @@ function Projects() {
 
           <div className="project-card">
             <div className="project-image">
-              <img src={Daquizz} alt="Page d'accueil du quizz" />
-              <div className="overlay">
-                <span>
-                  <a
-                    href="https://daquizz.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Voir le projet
-                  </a>
-                </span>
-              </div>
-            </div>
-            <div className="project-content">
-              <div className="project-title-content">
-                <h3 className="project-title">DaQuizz</h3>
-                <p>• En évolution constante</p>
-              </div>
-              <p className="project-desc">
-                Un jeu de quizz porté sur le monde du développement. Porté sur
-                un apprentissage appronfondi du backend. Authentification
-                sécurisée et complète à venir.
-              </p>
-              <ul className="project-stack">
-                <li>React</li>
-                <li>Supabase</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">
               <img src={InProgress} alt="Image qui affiche 'En  cours'" />
               <div className="overlay"></div>
             </div>
