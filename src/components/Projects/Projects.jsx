@@ -136,15 +136,10 @@ function Projects() {
                 <p>• Terminé</p>
               </div>
               <p className="project-desc">
-                Réalisé durant mon stage, j’ai participé à la modernisation du
-                site web, en optimisant l’expérience utilisateur, le design et
-                la responsivité. Bien que le projet n’ait pas été mis en ligne,
-                il m’a permis de renforcer mes compétences en{" "}
-                <strong>Next.js, Tailwind CSS, Framer Motion</strong> et
-                développement front-end.
+                Refonte d’un site réalisée durant mon stage, améliorant design,
+                UX et responsivité.
                 <em>
-                  Les logos et marques présentés appartiennent à leurs
-                  propriétaires et sont utilisés uniquement à titre de
+                  Les logos et marques sont présentés uniquement à titre de
                   démonstration.
                 </em>
               </p>
