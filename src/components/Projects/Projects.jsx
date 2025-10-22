@@ -4,6 +4,7 @@ import ProjectCineHelp from "../../assets/Projet_CineHelp.png";
 import ImageProjectSiteVitrine from "../../assets/ProjetVitrine_Image.png";
 import InProgress from "../../assets/InProgress.webp";
 import Daquizz from "../../assets/Projet_Daquizz.png";
+import Refonte from "../../assets/Projet_Refonte.png";
 
 function Projects() {
   return (
@@ -106,6 +107,51 @@ function Projects() {
               <ul className="project-stack">
                 <li>SvelteKit</li>
                 <li>TailwindCSS</li>
+                <li>i18n</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <div className="project-image">
+              <img
+                src={Refonte}
+                alt="Image de la section 'Hero' du site vitrine réalisée"
+              />
+              <div className="overlay">
+                <span>
+                  <a
+                    href="https://brenda-refonte-site.vercel.app/fr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Voir le projet
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="project-content">
+              <div className="project-title-content">
+                <h3 className="project-title">Projet de refonte de site</h3>
+                <p>• Terminé</p>
+              </div>
+              <p className="project-desc">
+                Réalisé durant mon stage, j’ai participé à la modernisation du
+                site web, en optimisant l’expérience utilisateur, le design et
+                la responsivité. Bien que le projet n’ait pas été mis en ligne,
+                il m’a permis de renforcer mes compétences en{" "}
+                <strong>Next.js, Tailwind CSS, Framer Motion</strong> et
+                développement front-end.
+                <em>
+                  Les logos et marques présentés appartiennent à leurs
+                  propriétaires et sont utilisés uniquement à titre de
+                  démonstration.
+                </em>
+              </p>
+              <ul className="project-stack">
+                <li>Next.js</li>
+                <li>TailwindCSS</li>
+                <li>Framer Motion</li>
                 <li>i18n</li>
               </ul>
             </div>
