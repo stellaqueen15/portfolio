@@ -151,26 +151,13 @@ function Projects() {
               </ul>
             </div>
           </div>
-
-          <div className="project-card">
-            <div className="project-image">
-              <img src={InProgress} alt="Image qui affiche 'En  cours'" />
-              <div className="overlay"></div>
-            </div>
-            <div className="project-content">
-              <div className="project-title-content">
-                <h3 className="project-title">Admin Tool</h3>
-                <p>• En cours</p>
-              </div>
-              <p className="project-desc">À suivre...</p>
-              <ul className="project-stack">
-                <li>React</li>
-                <li>Express.js</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
         </div>
+      <a href="https://www.behance.net/gallery/237988455/Visuels-promotionnels-pour-jeu-vido-indpendant" target="_blank" rel="noopener noreferrer"
+        class="inline-block mt-17 px-4 py-2 bg-white/15 border-1 border-white/40 text-white text-xl font-medium rounded-xl hover:bg-white/25 transition-colors duration-200">
+        Découvrir mes projets créatifs sur Behance
+      </a>
+
+
       </section>
     </>
   );
