@@ -7,20 +7,21 @@ function Menu() {
     <>
       <nav className="navbar" id="navbar">
         <div className="navbar-links">
-          <a href="#hero">
-            <i class="fi fi-rr-home"></i>
+          <a href="#hero" data-label="Accueil">
+            <i className="fi fi-sr-home"></i>
           </a>
-          <a href="#about">
-            <i class="fi fi-rr-user"></i>
+          <a href="#about" data-label="À propos">
+            <i className="fi fi-sr-user"></i>
           </a>
-          <a href="#projects">
-            <i class="fi fi-rs-display-code"></i>
+          <a href="#projects" data-label="Projets">
+            <i className="fi fi-sr-computer"></i>
           </a>
-          <a href="#skills">
-            <i class="fi fi-rr-brain-circuit"></i>
+          <a href="#skills" data-label="Compétences">
+            <i className="fi fi-sr-skill-alt"></i>
           </a>
         </div>
-        <a href="mailto:brendakmpro@gmail.com" className="btn-contact">
+
+        <a href="mailto:brendamisenga@gmail.com" className="btn-contact">
           Contact
         </a>
       </nav>

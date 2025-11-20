@@ -16,7 +16,7 @@ function Footer() {
           >
             LinkedIn
           </a>
-          <a href="mailto:brendakmpro@gmail.com">Me contacter</a>
+          <a href="mailto:brendamisenga@gmail.com">Me contacter</a>
         </div>
         <p class="footer-note">© 2025 Brenda · Tous droits réservés</p>
       </footer>

@@ -132,6 +132,33 @@
   color: #a181c6;
 }
 
+.project-graph{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 17px;
+  margin-top: 45px;
+  padding: 18px;
+  max-width: 380px;
+
+  /* Ombres externes */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 20px rgba(255, 255, 255, 0.208); /* effet lumineux intérieur */
+
+  /* Reflet léger en haut */
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.15),
+    transparent 70%
+  );
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-graph:hover{
+  transform: translateY(5px);
+}
+
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);

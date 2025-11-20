@@ -13,7 +13,8 @@
 
 .skills-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   gap: 20px;
   align-items: center;
   margin-top: 40px;
@@ -26,34 +27,13 @@
   font-weight: 700;
 }
 
-.skills-first-row,
-.skills-second-row {
-  display: flex;
-  flex-direction: column;
-}
-
-.skills-first-row h3,
-.skills-second-row h3 {
-  margin-bottom: 20px;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: white;
-}
-
-.skills-row {
-  display: flex;
-  gap: 20px;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #9479b4;
+.skills-card {
   background-color: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.322);
   border-radius: 17px;
+  padding: 20px;
+  margin-top: 10px;
+  max-width: 380px;
 
   /* Ombres externes */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08),
@@ -65,28 +45,37 @@
     rgba(255, 255, 255, 0.15),
     transparent 70%
   );
-
-  padding: 0.5rem;
-  cursor: pointer;
-  width: 140px;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
-    inset 0 0 25px rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
-.skill-image {
-  width: 74px;
-  opacity: 0.88;
+
+.skills-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
 }
 
-.skill p {
-  font-weight: 600;
-  font-size: 1.05rem;
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+.skill-badge {
+  background-color: #ffffff36;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 9999px;
+  color: #a181c6;
+}
+
 
 @media screen and (width <= 1125px) {
   .skills-row {

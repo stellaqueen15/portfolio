@@ -1,6 +1,6 @@
 import "../../App.css";
 import "../About/About.css";
-import Image from "../../assets/About_Image.jpg";
+import Image from "../../assets/Brenda.png";
 
 function About() {
   return (
@@ -21,32 +21,25 @@ function About() {
               </div>
               <div className="about-second-part">
                 <p className="about-text">
-                  Je me présente : je suis Brenda, une jeune développeuse
-                  diplômée d’un DEC en informatique. Je me suis spécialisée dans
-                  la programmation web et mobile, en tirant parti des
-                  compétences que j’ai acquises en tant que graphiste
-                  autodidacte. Aujourd’hui, je cherche à appliquer avec rigueur
-                  toutes mes compétences, tout en continuant d’apprendre et de
-                  me perfectionner. La meilleure chose qui pourrait m’arriver
-                  serait d’intégrer un projet qui me permette de m’aligner avec
-                  ces objectifs, et surtout, de le faire dans la bonne humeur !
+                  Je m’appelle Brenda. J’ai commencé comme graphiste
+                  autodidacte, en offrant mes services bénévolement à des
+                  créateurs et petites communautés. En côtoyant des
+                  développeurs, je me suis rendu compte que le développement me
+                  passionnait tout autant que le design. Pour approfondir mes
+                  compétences, j’ai ensuite fait un DEC en informatique.
+                  Aujourd’hui, je cherche à rejoindre une équipe où je pourrai
+                  mêler créativité et développement, tout en continuant à
+                  apprendre et à me perfectionner.
                 </p>
-                <div className="informations">
-                  <div className="about-information">
-                    <i class="fi fi-rr-marker"></i>
-                    <p>Basée à Montréal</p>
-                  </div>
-
-                  <div className="about-information">
-                    <i class="fi fi-rr-graduation-cap"></i>
-                    <p>Diplomée du DEC en Technique de l'informatique</p>
-                  </div>
-
-                  <div className="about-information">
-                    <i class="fi fi-rr-heart"></i>
-                    <p>Coup de coeur pour React</p>
-                  </div>
-                </div>
+                <p className="about-text">
+                  En dehors du code, j’aime tout ce qui stimule ma créativité :
+                  le design, la photo, la musique, le sport et découvrir de
+                  nouveaux endroits. Ces inspirations variées m’aident à créer
+                  des projets qui me ressemblent : simples, modernes et
+                  agréables à utiliser. Ce qui me motive, c’est de continuer à
+                  grandir comme développeuse tout en restant connectée à ce que
+                  j’aime dans la vie.
+                </p>
               </div>
             </div>
           </div>

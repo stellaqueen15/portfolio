@@ -2,7 +2,6 @@ import "../../App.css";
 import "../Projects/Projects.css";
 import ProjectCineHelp from "../../assets/Projet_CineHelp.png";
 import ImageProjectSiteVitrine from "../../assets/ProjetVitrine_Image.png";
-import InProgress from "../../assets/InProgress.webp";
 import Daquizz from "../../assets/Projet_Daquizz.png";
 import Refonte from "../../assets/Projet_Refonte.png";
 
@@ -152,12 +151,14 @@ function Projects() {
             </div>
           </div>
         </div>
-      <a href="https://www.behance.net/gallery/237988455/Visuels-promotionnels-pour-jeu-vido-indpendant" target="_blank" rel="noopener noreferrer"
-        class="inline-block mt-17 px-4 py-2 bg-white/15 border-1 border-white/40 text-white text-xl font-medium rounded-xl hover:bg-white/25 transition-colors duration-200">
-        Découvrir mes projets créatifs sur Behance
-      </a>
-
-
+        <a
+          href="https://www.behance.net/gallery/237988455/Visuels-promotionnels-pour-jeu-vido-indpendant"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-graph"
+        >
+          Découvrir mes projets créatifs sur Behance
+        </a>
       </section>
     </>
   );
