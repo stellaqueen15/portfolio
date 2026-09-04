@@ -4,19 +4,7 @@ import Navbar from "@/app/components/Navbar";
 export default function Home() {
   return (
       <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFCC5E_0%,#ffb347_45%,#FF892F_100%)] text-neutral-950">
-        {/* Navbar */}
-        <nav className="absolute left-0 top-0 z-20 w-full px-8 py-6">
-          <div className="relative mx-auto flex max-w-7xl items-center justify-center">
-            <Link
-                href="/"
-                className="absolute left-0 text-2xl font-black tracking-tight"
-            >
-              Logo
-            </Link>
-
-            <Navbar />
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero */}
         <section className="relative flex min-h-screen items-center justify-center px-6 pb-32">

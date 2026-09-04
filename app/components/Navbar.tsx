@@ -16,22 +16,26 @@ const linkClassName = `
 
 export default function Navbar() {
     return (
-        <nav
-            className="
-                flex items-center gap-3 rounded-full
-                bg-[linear-gradient(180deg,#FFB75E_0%,#ffb347_45%,#FF892F_100%)]
-                text-foreground px-2 py-1.5 backdrop-blur-md shadow-[0px_5px_8.1px_rgba(255,137,47,0.57)]
-            "
-        >
-            {navLinks.map((link) => (
-                <Link
-                    key={link.href}
-                    href={link.href}
-                    className={linkClassName}
+        <nav className="absolute left-0 top-0 z-20 w-full px-8 py-6">
+            <div className="relative mx-auto flex max-w-7xl items-center justify-center">
+                <div
+                    className="
+                        flex items-center gap-3 rounded-full
+                        bg-[linear-gradient(180deg,#FFB75E_0%,#ffb347_45%,#FF892F_100%)]
+                        text-foreground px-2 py-1.5 backdrop-blur-md shadow-[0px_5px_8.1px_rgba(255,137,47,0.57)]
+                    "
                 >
-                    {link.label}
-                </Link>
-            ))}
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={linkClassName}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                </div>
+            </div>
         </nav>
     );
 }
