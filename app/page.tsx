@@ -1,39 +1,43 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
       <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFCC5E_0%,#ffb347_45%,#FF892F_100%)] text-neutral-950">
         {/* Navbar */}
         <nav className="absolute left-0 top-0 z-20 w-full px-8 py-6">
           <div className="relative mx-auto flex max-w-7xl items-center justify-center">
-            {/* Logo */}
-            <a
+            <Link
                 href="/"
                 className="absolute left-0 text-2xl font-black tracking-tight"
             >
-              YOUR<span className="text-pink-600">.</span>
-            </a>
+              Logo
+            </Link>
 
             {/* Navigation */}
-            <div className="flex items-center gap-8 rounded-full bg-white/20 px-7 py-3 backdrop-blur-md">
-              <a
-                  href="#about"
-                  className="text-sm font-medium transition-opacity hover:opacity-60"
-              >
-                About
-              </a>
-
-              <a
+            <div
+                className="flex items-center gap-8 rounded-full bg-[linear-gradient(180deg,#FFB75E_0%,#ffb347_45%,#FF892F_100%)]
+                 text-[#221504] px-3 py-1 backdrop-blur-md">
+              <Link
                   href="#projects"
+                  className="text-sm font-medium px-3 py-1 rounded-full bg-[linear-gradient(161.58deg,#FFFFFF_35%,#FFD375_150.59%)]
+                  shadow-[1px_1px_0px_rgba(255,255,255,0.5)] transition-opacity hover:bg-white"
+              >
+                Projets
+              </Link>
+
+              <Link
+                  href="#experiences"
                   className="text-sm font-medium transition-opacity hover:opacity-60"
               >
-                Projects
-              </a>
+                Expériences
+              </Link>
 
-              <a
+              <Link
                   href="#contact"
                   className="text-sm font-medium transition-opacity hover:opacity-60"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
