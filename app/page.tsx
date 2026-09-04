@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navbar from "@/app/components/Navbar";
 
 export default function Home() {
   return (
@@ -13,32 +14,7 @@ export default function Home() {
               Logo
             </Link>
 
-            {/* Navigation */}
-            <div
-                className="flex items-center gap-8 rounded-full bg-[linear-gradient(180deg,#FFB75E_0%,#ffb347_45%,#FF892F_100%)]
-                 text-[#221504] px-3 py-1 backdrop-blur-md">
-              <Link
-                  href="#projects"
-                  className="text-sm font-medium px-3 py-1 rounded-full bg-[linear-gradient(161.58deg,#FFFFFF_35%,#FFD375_150.59%)]
-                  shadow-[1px_1px_0px_rgba(255,255,255,0.5)] transition-opacity hover:bg-white"
-              >
-                Projets
-              </Link>
-
-              <Link
-                  href="#experiences"
-                  className="text-sm font-medium transition-opacity hover:opacity-60"
-              >
-                Expériences
-              </Link>
-
-              <Link
-                  href="#contact"
-                  className="text-sm font-medium transition-opacity hover:opacity-60"
-              >
-                Contact
-              </Link>
-            </div>
+            <Navbar />
           </div>
         </nav>
 
