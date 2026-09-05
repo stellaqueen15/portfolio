@@ -16,3 +16,17 @@ body {
   color: var(--foreground);
   font-family: var(--font-baloo-2), sans-serif;
 }
+
+.text-gradient {
+  background: linear-gradient(
+          180deg,
+          #ffffff 31.06%,
+          #ffd375 150.59%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  filter: drop-shadow(0 5px 8px rgba(255, 137, 47, 0.57));
+}
