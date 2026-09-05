@@ -2,7 +2,7 @@ const projects = [
     {
         title: "Portfolio",
         description: "Un portfolio pensé comme une expérience interactive.",
-        image: "/projects/portfolio.png",
+        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         demo: "https://example.com",
         slug: "portfolio",
@@ -10,7 +10,7 @@ const projects = [
     {
         title: "Influencer Dashboard",
         description: "Dashboard B2B pour visualiser et analyser des données.",
-        image: "/projects/dashboard.png",
+        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
         tags: ["Next.js", "React", "MSW"],
         demo: "https://example.com",
         slug: "influencer-dashboard",
@@ -18,7 +18,7 @@ const projects = [
     {
         title: "API Project",
         description: "Application web basée sur une API et des données dynamiques.",
-        image: "/projects/api.png",
+        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
         tags: ["React", "API", "TypeScript"],
         demo: "https://example.com",
         slug: "api-project",
@@ -26,7 +26,7 @@ const projects = [
     {
         title: "RP Admin Tool",
         description: "Interface d’administration pensée pour simplifier la gestion.",
-        image: "/projects/admin.png",
+        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
         tags: ["Next.js", "UI/UX", "Tailwind"],
         demo: "https://example.com",
         slug: "rp-admin-tool",
@@ -56,40 +56,38 @@ export default function ProjectsSection() {
                             key={project.title}
                             className={`w-full md:w-[92%] ${offsets[index]}`}
                         >
-                            <div className="group overflow-hidden rounded-[28px] bg-light-gradient shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
+                            <div className="group overflow-hidden rounded-[50px] bg-light-gradient shadow-soft
+                                backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
 
-                                <div className="grid min-h-[280px] grid-cols-1 md:grid-cols-[38%_1fr]">
-                                    <div className="relative min-h-[220px] overflow-hidden md:min-h-0">
+                                <div className="grid min-h-[100px] grid-cols-1 md:grid-cols-[38%_1fr]">
+                                    <div className="relative m-4 min-h-[220px] max-w-100 overflow-hidden rounded-[30px] md:min-h-0">
                                         <img
                                             src={project.image}
                                             alt={project.title}
-                                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                            className="absolute inset-0 h-full w-full object-cover transition-transform
+                                                duration-500 group-hover:scale-105"
                                         />
                                     </div>
 
-                                    <div className="flex flex-col justify-between p-6 md:p-8">
-
+                                    <div className="flex flex-col justify-between p-2 md:p-4">
                                         <div>
-                                            <span className="text-sm font-bold uppercase opacity-40">
-                                                0{index + 1}
-                                            </span>
-
-                                            <h3 className="mt-1 text-3xl font-black uppercase md:text-4xl">
+                                            <h3 className="text-3xl font-black uppercase md:text-4xl">
                                                 {project.title}
                                             </h3>
 
-                                            <p className="mt-3 max-w-xl text-base font-medium opacity-70 md:text-lg">
+                                            <p className="max-w-xl text-base font-medium opacity-70 md:text-lg">
                                                 {project.description}
                                             </p>
                                         </div>
 
-                                        <div className="mt-6">
-                                            <div className="mb-5 flex flex-wrap gap-2">
+                                        <div className="mt-6 mr-3 flex items-center justify-between gap-6">
+                                            <div className="flex flex-wrap gap-2">
                                                 {project.tags.map((tag) => (
                                                     <span
                                                         key={tag}
                                                         className="rounded-md bg-primary/16 border border-primary
-                                                            text-primary px-2 py-0.5 text-sm font-semibold">
+                                                            text-primary px-2 py-0.5 text-sm font-semibold"
+                                                    >
                                                         {tag}
                                                     </span>
                                                 ))}
@@ -98,7 +96,9 @@ export default function ProjectsSection() {
                                             <div className="flex flex-wrap gap-3">
                                                 <a
                                                     href={`/projects/${project.slug}`}
-                                                    className="rounded-full bg-foreground px-5 py-2.5 text-sm font-bold text-white transition-transform duration-200 hover:-translate-y-0.5"
+                                                    className="rounded-xl bg-background px-5 py-2.5 text-sm font-bold
+                                                    text-white transition-transform duration-200
+                                                    hover:-translate-y-0.5"
                                                 >
                                                     En savoir plus
                                                 </a>
@@ -108,12 +108,14 @@ export default function ProjectsSection() {
                                                         href={project.demo}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="rounded-full border-2 border-foreground/15 bg-white/50 px-5 py-2.5 text-sm font-bold transition-all duration-200 hover:-translate-y-0.5 hover:bg-white"
+                                                        className="flex items-center justify-center rounded-xl
+                                                        border-2 border-primary px-3 text-sm font-bold
+                                                        text-secondary-foreground transition-all duration-200
+                                                        hover:-translate-y-0.5 hover:bg-white/30"
                                                     >
                                                         Voir la démo ↗
                                                     </a>
                                                 )}
-
                                             </div>
                                         </div>
                                     </div>
