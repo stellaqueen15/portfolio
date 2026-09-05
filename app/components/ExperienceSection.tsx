@@ -1,6 +1,6 @@
 const experiences = [
     {
-        date: "Févr. 2026 — Aujourd’hui",
+        date: "Févr. 2026 - Aujourd’hui",
         title: "Développeuse web junior",
         company: "Echos Virtuels",
         type: "Expérience professionnelle",
@@ -14,7 +14,7 @@ const experiences = [
         ],
     },
     {
-        date: "2022 — 2025",
+        date: "2022 - 2025",
         title: "DEC en Informatique",
         company: "Collège Ahuntsic",
         type: "Formation",
@@ -28,7 +28,7 @@ const experiences = [
         ],
     },
     {
-        date: "Mars 2025 — Mai 2025",
+        date: "Mars 2025 - Mai 2025",
         title: "Stagiaire en développement web",
         company: "Nuagerie Inc.",
         type: "Stage",
@@ -41,7 +41,7 @@ const experiences = [
         ],
     },
     {
-        date: "Juin 2023 — Déc. 2024",
+        date: "Juin 2023 - Déc. 2024",
         title: "Graphiste",
         company: "HabboCity",
         type: "Expérience",
@@ -59,29 +59,17 @@ export default function ExperienceSection() {
     return (
         <section
             id="experiences"
-            className="
-                relative min-h-screen overflow-hidden
-                px-6 py-20
-            "
-        >
+            className="relative min-h-screen overflow-hidden px-6 py-20 bg-background">
             <div className="relative z-10 mb-12 text-center">
                 <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
                     Oui, j'ai travaillé
                 </h2>
             </div>
 
-            {/* Timeline */}
             <div className="relative mx-auto max-w-5xl">
-
-                {/* Ligne centrale */}
                 <div
-                    className="
-                        absolute left-1/2 top-0 h-full w-[4px]
-                        -translate-x-1/2
-                        rounded-full
-                        bg-white/50
-                        shadow-[0_0_10px_rgba(255,255,255,0.25)]
-                    "
+                    className="absolute left-1/2 top-0 h-full w-[4px] -translate-x-1/2 rounded-full bg-secondary
+                        shadow-[0_0_10px_rgba(255,255,255,0.25)]"
                 />
 
                 <div className="relative flex flex-col gap-10 md:gap-4">
@@ -91,12 +79,8 @@ export default function ExperienceSection() {
                         return (
                             <div
                                 key={`${experience.company}-${experience.date}`}
-                                className="
-                                    relative grid min-h-[150px]
-                                    grid-cols-2 items-center
-                                "
+                                className="relative grid min-h-37.5 grid-cols-2 items-center"
                             >
-                                {/* Carte */}
                                 <div
                                     className={`
                                         ${isLeft
@@ -106,63 +90,44 @@ export default function ExperienceSection() {
                                     `}
                                 >
                                     <details
-                                        className="
-                                            group
-                                            rounded-[28px]
-                                            bg-white/30
-                                            p-5
-                                            backdrop-blur-md
-                                            transition-all
-                                            duration-300
-                                            hover:bg-white/40
-                                            hover:shadow-[0_8px_25px_rgba(255,137,47,0.15)]
-                                        "
+                                        className="group rounded-[28px] bg-light-gradient shadow-soft p-5"
                                     >
                                         <summary
-                                            className="
-                                                cursor-pointer
-                                                list-none
-                                                select-none
-                                            "
+                                            className="cursor-pointer list-none select-none"
                                         >
-                                            <div className="text-xs font-semibold uppercase tracking-wider opacity-60">
+                                            <div
+                                                className="text-[11px] font-semibold uppercase tracking-wider opacity-60">
                                                 {experience.date}
                                             </div>
 
-                                            <h3 className="mt-1 text-xl font-black md:text-2xl">
+                                            <h3 className="mt-0.5 text-lg font-black md:text-xl">
                                                 {experience.title}
                                             </h3>
 
-                                            <p className="font-semibold opacity-70">
+                                            <p className="text-sm font-semibold">
                                                 {experience.company}
                                             </p>
 
                                             <div
-                                                className={`
-                                                    mt-3 flex flex-wrap gap-1.5
-                                                    ${isLeft
-                                                    ? "justify-end"
-                                                    : "justify-start"
-                                                }
-                                                `}
-                                            >
+                                                className={`mt-2 flex flex-wrap items-center gap-1.5 text-[10px] font-semibold
+                                                ${isLeft ? "justify-end" : "justify-start"}
+                                            `}>
+                                                <span className="opacity-70">
+                                                    {experience.type}
+                                                </span>
+
+                                                <span className="opacity-30">•</span>
+
                                                 {experience.tags.map((tag) => (
                                                     <span
                                                         key={tag}
-                                                        className="
-                                                            rounded-full
-                                                            bg-white/60
-                                                            px-2.5 py-1
-                                                            text-[11px]
-                                                            font-semibold
-                                                        "
-                                                    >
+                                                        className="rounded-md text-primary border border-primary bg-primary/16 px-2 py-0.5 text-[10px]">
                                                         {tag}
                                                     </span>
                                                 ))}
                                             </div>
 
-                                            <div className="mt-3 text-xs font-semibold opacity-50">
+                                            <div className="mt-2 text-[11px] font-semibold opacity-70">
                                                 <span className="group-open:hidden">
                                                     + Voir les détails
                                                 </span>
@@ -209,23 +174,15 @@ export default function ExperienceSection() {
                                         -translate-x-1/2
                                         -translate-y-1/2
                                         rounded-full
-                                        border-4 border-[#FF9A3D]
+                                        border-4 border-secondary
                                         bg-white
                                         shadow-[0_3px_10px_rgba(255,137,47,0.4)]
                                     "
                                 />
 
-                                {/* Petit point décoratif */}
                                 <div
-                                    className="
-                                        absolute left-1/2 top-1/2
-                                        z-20
-                                        h-2.5 w-2.5
-                                        -translate-x-1/2
-                                        -translate-y-1/2
-                                        rounded-full
-                                        bg-[#FF9A3D]
-                                    "
+                                    className="absolute left-1/2 top-1/2 z-20 h-2.5 w-2.5 -translate-x-1/2
+                                        -translate-y-1/2 rounded-full bg-secondary"
                                 />
                             </div>
                         );
