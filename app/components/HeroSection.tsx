@@ -1,6 +1,6 @@
 export default function HeroSection() {
     return (
-        <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pb-32">
+        <section className="relative flex h-screen items-center justify-center overflow-hidden px-6 pb-32 bg-background">
             <div className="relative z-10 text-center">
                 <h1 className="text-6xl font-black leading-[0.7] tracking-tighter uppercase
                     sm:text-7xl md:text-8xl lg:text-[9rem]">
@@ -16,7 +16,6 @@ export default function HeroSection() {
                 </h1>
             </div>
 
-            {/* Vague avant */}
             <div className="absolute bottom-20 left-0 z-10 w-full overflow-hidden">
                 <svg
                     className="block h-40 w-full"
