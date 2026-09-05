@@ -1,30 +1,13 @@
 import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
+import HeroSection from "@/app/components/HeroSection";
 
 export default function Home() {
   return (
       <main className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#FFCC5E_0%,#ffb347_45%,#FF892F_100%)] text-neutral-950">
         <Navbar />
 
-        {/* Hero */}
-        <section className="relative flex min-h-screen items-center justify-center px-6 pb-32">
-          <div className="relative z-10 text-center">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] opacity-60">
-              Creative developer
-            </p>
-
-            <h1 className="max-w-5xl text-6xl font-black leading-[0.9] tracking-[-0.05em] sm:text-7xl md:text-8xl lg:text-[9rem]">
-              I make things
-              <br />
-              <span className="text-pink-600">feel alive.</span>
-            </h1>
-
-            <p className="mx-auto mt-8 max-w-lg text-base leading-relaxed opacity-70 md:text-lg">
-              Front-end developer & designer creating playful digital
-              experiences through code, motion and visual design.
-            </p>
-          </div>
-        </section>
+        <HeroSection />
 
         {/* Liquid waves */}
         <div className="pointer-events-none absolute bottom-0 left-0 z-10 w-full">
