@@ -2,6 +2,7 @@
 
 :root {
     --primary: #FF8B30;
+    --secondary: #FFCC5E;
     --foreground: #3c2408;
     --background: linear-gradient(
       180deg,
@@ -25,6 +26,7 @@
 
 @theme inline {
     --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
     --background-image-background: var(--background);
     --background-image-background-reverse: var(--background-reverse);
     --color-foreground: var(--foreground);
