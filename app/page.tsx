@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import HeroSection from "@/app/components/HeroSection";
 
