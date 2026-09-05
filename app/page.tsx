@@ -1,12 +1,15 @@
 import Navbar from "@/app/components/Navbar";
 import HeroSection from "@/app/components/HeroSection";
+import ExperienceSection from "@/app/components/ExperienceSection";
 
 export default function Home() {
   return (
-      <main className="relative h-screen overflow-hidden bg-[linear-gradient(180deg,#FFCC5E_0%,#ffb347_45%,#FF892F_100%)]">
+      <main className="relative min-h-screen overflow-hidden">
         <Navbar />
 
         <HeroSection />
+
+        <ExperienceSection />
       </main>
   );
 }
