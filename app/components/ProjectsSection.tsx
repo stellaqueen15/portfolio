@@ -42,7 +42,7 @@ export default function ProjectsSection() {
     ];
 
     return (
-        <section className="relative min-h-screen overflow-hidden bg-background px-6 py-24">
+        <section className="relative min-h-screen overflow-hidden bg-background-reverse px-6 py-24">
             <div className="mx-auto max-w-7xl">
                 <div className="relative z-10 mb-12 text-center">
                     <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
