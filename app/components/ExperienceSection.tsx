@@ -6,11 +6,10 @@ const experiences = [
         type: "Expérience professionnelle",
         tags: ["Web", "Frontend", "Backend"],
         details: [
-            "Développement et maintenance d’applications web",
-            "Intégration de nouvelles fonctionnalités",
-            "Travail avec des APIs et des bases de données",
-            "Correction et optimisation de fonctionnalités existantes",
-            "Participation à différentes étapes du développement",
+            "60 000+ utilisateurs sur une application en production",
+            "Modélisation de données relationnelles",
+            "Composants UI accessibles & tests automatisés",
+            "Implémentation de fonctionnalités complexes",
         ],
     },
     {
@@ -34,10 +33,10 @@ const experiences = [
         type: "Stage",
         tags: ["Web", "Frontend", "API"],
         details: [
-            "Développement et intégration de fonctionnalités web",
-            "Participation à l’amélioration d’interfaces existantes",
-            "Travail avec des APIs",
-            "Correction de problèmes et ajustements techniques",
+            "Conception et développement de landing pages",
+            "Refonte et amélioration d’interfaces existantes",
+            "Internationalisation (i18n) et optimisation des performances",
+            "Optimisation du SEO et de l’expérience utilisateur",
         ],
     },
     {
