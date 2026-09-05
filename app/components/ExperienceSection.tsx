@@ -64,14 +64,9 @@ export default function ExperienceSection() {
                 px-6 py-20
             "
         >
-            {/* Titre */}
             <div className="relative z-10 mb-12 text-center">
-                <p className="mb-2 text-sm font-semibold uppercase tracking-widest opacity-60">
-                    Mon parcours
-                </p>
-
-                <h2 className="text-5xl font-black tracking-tight md:text-7xl">
-                    Expériences
+                <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
+                    Oui, j'ai travaillé
                 </h2>
             </div>
 
