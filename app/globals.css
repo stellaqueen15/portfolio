@@ -2,7 +2,7 @@
 
 :root {
     --primary: #FF8B30;
-    --foreground: #221504;
+    --foreground: #3c2408;
     --background: linear-gradient(
       180deg,
       #FFCC5E 0%,
@@ -20,6 +20,7 @@
       #ffffff 31.06%,
       #ffd375 150.59%
     );
+    --shadow-soft: 0px 6px 8.4px rgba(0, 0, 0, 0.07);
 }
 
 @theme inline {
@@ -28,6 +29,9 @@
     --background-image-background-reverse: var(--background-reverse);
     --color-foreground: var(--foreground);
     --background-image-light-gradient: var(--light-gradient);
+
+    --shadow-soft: var(--shadow-soft);
+
     --font-baloo: var(--font-baloo-2);
 }
 
