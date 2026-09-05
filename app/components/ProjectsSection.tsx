@@ -50,18 +50,15 @@ export default function ProjectsSection() {
                     </h2>
                 </div>
 
-                {/* Projects */}
                 <div className="flex flex-col gap-8">
                     {projects.map((project, index) => (
                         <article
                             key={project.title}
                             className={`w-full md:w-[92%] ${offsets[index]}`}
                         >
-                            <div className="group overflow-hidden rounded-[28px] bg-white/75 shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
+                            <div className="group overflow-hidden rounded-[28px] bg-light-gradient shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
 
                                 <div className="grid min-h-[280px] grid-cols-1 md:grid-cols-[38%_1fr]">
-
-                                    {/* Image */}
                                     <div className="relative min-h-[220px] overflow-hidden md:min-h-0">
                                         <img
                                             src={project.image}
@@ -70,7 +67,6 @@ export default function ProjectsSection() {
                                         />
                                     </div>
 
-                                    {/* Content */}
                                     <div className="flex flex-col justify-between p-6 md:p-8">
 
                                         <div>
@@ -88,23 +84,18 @@ export default function ProjectsSection() {
                                         </div>
 
                                         <div className="mt-6">
-
-                                            {/* Tags */}
                                             <div className="mb-5 flex flex-wrap gap-2">
                                                 {project.tags.map((tag) => (
                                                     <span
                                                         key={tag}
-                                                        className="rounded-full bg-black/5 px-4 py-2 text-sm font-bold"
-                                                    >
+                                                        className="rounded-md bg-primary/16 border border-primary
+                                                            text-primary px-2 py-0.5 text-sm font-semibold">
                                                         {tag}
                                                     </span>
                                                 ))}
                                             </div>
 
-                                            {/* Buttons */}
                                             <div className="flex flex-wrap gap-3">
-
-                                                {/* En savoir plus */}
                                                 <a
                                                     href={`/projects/${project.slug}`}
                                                     className="rounded-full bg-foreground px-5 py-2.5 text-sm font-bold text-white transition-transform duration-200 hover:-translate-y-0.5"
@@ -112,7 +103,6 @@ export default function ProjectsSection() {
                                                     En savoir plus
                                                 </a>
 
-                                                {/* Demo */}
                                                 {project.demo && (
                                                     <a
                                                         href={project.demo}
