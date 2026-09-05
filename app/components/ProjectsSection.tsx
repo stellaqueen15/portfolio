@@ -1,0 +1,111 @@
+const projects = [
+    {
+        title: "Portfolio V3",
+        description: "Un portfolio pensé comme une expérience interactive.",
+        image: "/projects/portfolio.png",
+        tags: ["Next.js", "TypeScript", "Tailwind"],
+        demo: "https://...",
+        slug: "portfolio",
+    },
+    {
+        title: "Influencer Dashboard",
+        description: "Dashboard B2B pour visualiser et analyser des données.",
+        image: "/projects/dashboard.png",
+        tags: ["Next.js", "React", "MSW"],
+        demo: "https://...",
+        slug: "dashboard",
+    },
+    {
+        title: "API Project",
+        description: "Application web basée sur une API et des données dynamiques.",
+        image: "/projects/api.png",
+        tags: ["React", "API", "TypeScript"],
+        demo: "https://...",
+        slug: "api_project",
+    },
+    {
+        title: "RP Admin Tool",
+        description: "Interface d’administration pensée pour simplifier la gestion.",
+        image: "/projects/admin.png",
+        tags: ["Next.js", "UI/UX", "Tailwind"],
+        demo: "https://...",
+        slug: "rp_admin_tool",
+    },
+];
+
+export default function ProjectsSection() {
+    const offsets = [
+        "translate-x-0",
+        "translate-x-[8%]",
+        "translate-x-[16%]",
+        "translate-x-[8%]",
+    ];
+
+    return (
+        <section className="relative min-h-screen overflow-hidden bg-background-reverse px-6 py-24">
+            <div className="mx-auto max-w-7xl">
+                {/* Titre */}
+                <div className="mb-16">
+                    <p className="mb-2 text-lg font-bold uppercase tracking-wide">
+                        Mes créations
+                    </p>
+
+                    <h2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
+                        Projets
+                    </h2>
+                </div>
+
+                {/* Projets */}
+                <div className="flex flex-col gap-8">
+                    {projects.map((project, index) => (
+                        <article
+                            key={project.title}
+                            className={`w-[92%] ${offsets[index]}`}
+                        >
+                            <div className="group overflow-hidden rounded-[28px] bg-white/75 shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
+                                <div className="grid min-h-[280px] grid-cols-[38%_1fr]">
+                                    {/* Image */}
+                                    <div className="relative overflow-hidden">
+                                        <img
+                                            src={project.image}
+                                            alt={project.title}
+                                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        />
+                                    </div>
+
+                                    {/* Contenu */}
+                                    <div className="flex flex-col justify-between p-6 md:p-8">
+                                        <div>
+                                            <span className="text-sm font-bold uppercase opacity-40">
+                                                0{index + 1}
+                                            </span>
+
+                                            <h3 className="mt-1 text-3xl font-black uppercase md:text-4xl">
+                                                {project.title}
+                                            </h3>
+
+                                            <p className="mt-3 max-w-xl text-base font-medium opacity-70 md:text-lg">
+                                                {project.description}
+                                            </p>
+                                        </div>
+
+                                        <div className="mt-6 flex flex-wrap gap-2">
+                                            {project.tags.map((tag) => (
+                                                <span
+                                                    key={tag}
+                                                    className="rounded-full bg-black/5 px-4 py-2 text-sm font-bold"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
