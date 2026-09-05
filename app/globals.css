@@ -1,46 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #FF8B30;
-  --foreground: #221504;
-  --background: linear-gradient(
-          180deg,
-          #FFCC5E 0%,
-          #ffb347 45%,
-          #FF892F 100%
-  );
-  --background-reverse: linear-gradient(
-          0deg,
-          #FFCC5E 0%,
-          #ffb347 45%,
-          #FF892F 100%
-  );
+    --primary: #FF8B30;
+    --foreground: #221504;
+    --background: linear-gradient(
+      180deg,
+      #FFCC5E 0%,
+      #ffb347 45%,
+      #FF892F 100%
+    );
+    --background-reverse: linear-gradient(
+      0deg,
+      #FFCC5E 0%,
+      #ffb347 45%,
+      #FF892F 100%
+    );
+    --light-gradient: linear-gradient(
+      180deg,
+      #ffffff 31.06%,
+      #ffd375 150.59%
+    );
 }
 
 @theme inline {
-  --color-primary: var(--primary);
-  --background-image-background: var(--background);
-  --background-image-background-reverse: var(--background-reverse);
-  --color-foreground: var(--foreground);
-  --font-baloo: var(--font-baloo-2);
+    --color-primary: var(--primary);
+    --background-image-background: var(--background);
+    --background-image-background-reverse: var(--background-reverse);
+    --color-foreground: var(--foreground);
+    --background-image-light-gradient: var(--light-gradient);
+    --font-baloo: var(--font-baloo-2);
 }
 
 body {
-  background: var(--primary);
-  color: var(--foreground);
-  font-family: var(--font-baloo-2), sans-serif;
+    background: var(--primary);
+    color: var(--foreground);
+    font-family: var(--font-baloo-2), sans-serif;
 }
 
 .text-gradient {
-  background: linear-gradient(
-          180deg,
-          #ffffff 31.06%,
-          #ffd375 150.59%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+    @apply bg-light-gradient bg-clip-text text-transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-  filter: drop-shadow(0 5px 8px rgba(255, 137, 47, 0.57));
+    filter: drop-shadow(0 5px 8px rgba(255, 137, 47, 0.57));
 }
