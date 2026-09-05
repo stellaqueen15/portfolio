@@ -44,15 +44,9 @@ export default function ProjectsSection() {
     return (
         <section className="relative min-h-screen overflow-hidden bg-background px-6 py-24">
             <div className="mx-auto max-w-7xl">
-
-                {/* Header */}
-                <div className="mb-16">
-                    <p className="mb-2 text-lg font-bold uppercase tracking-wide">
-                        Mes créations
-                    </p>
-
-                    <h2 className="text-5xl font-black uppercase tracking-tight md:text-7xl">
-                        Projets
+                <div className="relative z-10 mb-12 text-center">
+                    <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
+                        Oui, j'ai travaillé
                     </h2>
                 </div>
 
