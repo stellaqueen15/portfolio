@@ -1,10 +1,10 @@
 const projects = [
     {
-        title: "Portfolio V3",
+        title: "Portfolio",
         description: "Un portfolio pensé comme une expérience interactive.",
         image: "/projects/portfolio.png",
         tags: ["Next.js", "TypeScript", "Tailwind"],
-        demo: "https://...",
+        demo: "https://example.com",
         slug: "portfolio",
     },
     {
@@ -12,39 +12,40 @@ const projects = [
         description: "Dashboard B2B pour visualiser et analyser des données.",
         image: "/projects/dashboard.png",
         tags: ["Next.js", "React", "MSW"],
-        demo: "https://...",
-        slug: "dashboard",
+        demo: "https://example.com",
+        slug: "influencer-dashboard",
     },
     {
         title: "API Project",
         description: "Application web basée sur une API et des données dynamiques.",
         image: "/projects/api.png",
         tags: ["React", "API", "TypeScript"],
-        demo: "https://...",
-        slug: "api_project",
+        demo: "https://example.com",
+        slug: "api-project",
     },
     {
         title: "RP Admin Tool",
         description: "Interface d’administration pensée pour simplifier la gestion.",
         image: "/projects/admin.png",
         tags: ["Next.js", "UI/UX", "Tailwind"],
-        demo: "https://...",
-        slug: "rp_admin_tool",
+        demo: "https://example.com",
+        slug: "rp-admin-tool",
     },
 ];
 
 export default function ProjectsSection() {
     const offsets = [
-        "translate-x-0",
-        "translate-x-[8%]",
-        "translate-x-[16%]",
-        "translate-x-[8%]",
+        "md:translate-x-0",
+        "md:translate-x-[8%]",
+        "md:translate-x-[16%]",
+        "md:translate-x-[8%]",
     ];
 
     return (
-        <section className="relative min-h-screen overflow-hidden bg-background-reverse px-6 py-24">
+        <section className="relative min-h-screen overflow-hidden bg-background px-6 py-24">
             <div className="mx-auto max-w-7xl">
-                {/* Titre */}
+
+                {/* Header */}
                 <div className="mb-16">
                     <p className="mb-2 text-lg font-bold uppercase tracking-wide">
                         Mes créations
@@ -55,17 +56,19 @@ export default function ProjectsSection() {
                     </h2>
                 </div>
 
-                {/* Projets */}
+                {/* Projects */}
                 <div className="flex flex-col gap-8">
                     {projects.map((project, index) => (
                         <article
                             key={project.title}
-                            className={`w-[92%] ${offsets[index]}`}
+                            className={`w-full md:w-[92%] ${offsets[index]}`}
                         >
                             <div className="group overflow-hidden rounded-[28px] bg-white/75 shadow-soft backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
-                                <div className="grid min-h-[280px] grid-cols-[38%_1fr]">
+
+                                <div className="grid min-h-[280px] grid-cols-1 md:grid-cols-[38%_1fr]">
+
                                     {/* Image */}
-                                    <div className="relative overflow-hidden">
+                                    <div className="relative min-h-[220px] overflow-hidden md:min-h-0">
                                         <img
                                             src={project.image}
                                             alt={project.title}
@@ -73,8 +76,9 @@ export default function ProjectsSection() {
                                         />
                                     </div>
 
-                                    {/* Contenu */}
+                                    {/* Content */}
                                     <div className="flex flex-col justify-between p-6 md:p-8">
+
                                         <div>
                                             <span className="text-sm font-bold uppercase opacity-40">
                                                 0{index + 1}
@@ -89,15 +93,44 @@ export default function ProjectsSection() {
                                             </p>
                                         </div>
 
-                                        <div className="mt-6 flex flex-wrap gap-2">
-                                            {project.tags.map((tag) => (
-                                                <span
-                                                    key={tag}
-                                                    className="rounded-full bg-black/5 px-4 py-2 text-sm font-bold"
+                                        <div className="mt-6">
+
+                                            {/* Tags */}
+                                            <div className="mb-5 flex flex-wrap gap-2">
+                                                {project.tags.map((tag) => (
+                                                    <span
+                                                        key={tag}
+                                                        className="rounded-full bg-black/5 px-4 py-2 text-sm font-bold"
+                                                    >
+                                                        {tag}
+                                                    </span>
+                                                ))}
+                                            </div>
+
+                                            {/* Buttons */}
+                                            <div className="flex flex-wrap gap-3">
+
+                                                {/* En savoir plus */}
+                                                <a
+                                                    href={`/projects/${project.slug}`}
+                                                    className="rounded-full bg-foreground px-5 py-2.5 text-sm font-bold text-white transition-transform duration-200 hover:-translate-y-0.5"
                                                 >
-                                                    {tag}
-                                                </span>
-                                            ))}
+                                                    En savoir plus
+                                                </a>
+
+                                                {/* Demo */}
+                                                {project.demo && (
+                                                    <a
+                                                        href={project.demo}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="rounded-full border-2 border-foreground/15 bg-white/50 px-5 py-2.5 text-sm font-bold transition-all duration-200 hover:-translate-y-0.5 hover:bg-white"
+                                                    >
+                                                        Voir la démo ↗
+                                                    </a>
+                                                )}
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
