@@ -8,7 +8,6 @@ export default function HeroSection() {
                         Brenda
                     </span>
                     <br />
-
                     <span className="inline-block text-[6.5rem] text-gradient">
                         Développeuse web
                     </span>
