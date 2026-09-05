@@ -5,11 +5,11 @@ import ExperienceSection from "@/app/components/ExperienceSection";
 export default function Home() {
   return (
       <main className="relative min-h-screen overflow-hidden">
-        <Navbar />
+          <Navbar />
 
-        <HeroSection />
+          <HeroSection />
 
-        <ExperienceSection />
+          <ExperienceSection />
       </main>
   );
 }
