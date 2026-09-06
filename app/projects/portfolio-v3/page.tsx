@@ -54,9 +54,8 @@ export default function PortfolioV3Page() {
 
             {/* À PROPOS */}
             <section className="mb-24 max-w-4xl">
-
-                <span className="text-sm font-black uppercase text-primary">
-                    01 — Le projet
+                <span className="text-sm font-black uppercase text-foreground/60">
+                    01 - Le projet
                 </span>
 
                 <h2 className="mt-3 text-4xl font-black uppercase md:text-6xl">
@@ -64,7 +63,6 @@ export default function PortfolioV3Page() {
                 </h2>
 
                 <div className="mt-6 space-y-4 text-lg font-medium leading-relaxed opacity-70">
-
                     <p>
                         Ce portfolio est avant tout un terrain de jeu pour
                         expérimenter autour du design, de l'interaction et
@@ -76,16 +74,13 @@ export default function PortfolioV3Page() {
                         davantage ma personnalité et ma manière de travailler
                         qu'un portfolio traditionnel.
                     </p>
-
                 </div>
-
             </section>
 
 
             {/* DIRECTION ARTISTIQUE */}
             <section className="mb-24">
-
-                <span className="text-sm font-black uppercase text-primary">
+                <span className="text-sm font-black uppercase text-foreground/60">
                     02 — Direction artistique
                 </span>
 
@@ -102,7 +97,6 @@ export default function PortfolioV3Page() {
 
 
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
-
                     <div className="overflow-hidden rounded-[28px] bg-light-gradient p-3 shadow-soft">
                         <img
                             src="/Image.jpg"
@@ -112,7 +106,6 @@ export default function PortfolioV3Page() {
                     </div>
 
                     <div className="rounded-[28px] bg-foreground p-7 text-white">
-
                         <p className="text-sm font-black uppercase opacity-40">
                             Design system
                         </p>
@@ -126,18 +119,14 @@ export default function PortfolioV3Page() {
                             interactions sont d'abord explorés sur Figma
                             avant leur intégration dans Next.js.
                         </p>
-
                     </div>
-
                 </div>
-
             </section>
 
 
             {/* DÉVELOPPEMENT */}
             <section className="mb-24">
-
-                <span className="text-sm font-black uppercase text-primary">
+                <span className="text-sm font-black uppercase text-foreground/60">
                     03 — Développement
                 </span>
 
@@ -145,11 +134,8 @@ export default function PortfolioV3Page() {
                     Sous le capot
                 </h2>
 
-
                 <div className="mt-10 grid gap-4 md:grid-cols-2">
-
-                    <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-
+                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
                         <span className="text-3xl">🎨</span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -160,12 +146,10 @@ export default function PortfolioV3Page() {
                             Conception de l'interface sur Figma puis
                             intégration en Next.js.
                         </p>
-
                     </article>
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-
                         <span className="text-3xl">🧩</span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -176,12 +160,10 @@ export default function PortfolioV3Page() {
                             Une architecture pensée autour de composants
                             réutilisables et cohérents.
                         </p>
-
                     </article>
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-
                         <span className="text-3xl">✨</span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -192,12 +174,10 @@ export default function PortfolioV3Page() {
                             Animations et transitions pour rendre la
                             navigation plus vivante.
                         </p>
-
                     </article>
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-
                         <span className="text-3xl">📱</span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -208,18 +188,14 @@ export default function PortfolioV3Page() {
                             Une expérience adaptée aux différentes tailles
                             d'écran.
                         </p>
-
                     </article>
-
                 </div>
-
             </section>
 
 
             {/* SCREENSHOTS */}
             <section className="mb-24">
-
-                <span className="text-sm font-black uppercase text-primary">
+                <span className="text-sm font-black uppercase text-foreground/60">
                     04 — Aperçus
                 </span>
 
@@ -227,9 +203,7 @@ export default function PortfolioV3Page() {
                     Quelques morceaux du projet
                 </h2>
 
-
                 <div className="mt-10 space-y-6">
-
                     <div className="overflow-hidden rounded-[32px] bg-light-gradient p-3 shadow-soft">
                         <img
                             src="/Image.jpg"
@@ -253,17 +227,14 @@ export default function PortfolioV3Page() {
                             className="w-full rounded-[24px]"
                         />
                     </div>
-
                 </div>
-
             </section>
 
 
             {/* ÉTAT DU PROJET */}
             <section className="mb-24 rounded-[32px] bg-foreground p-8 text-white md:p-12">
-
                 <span className="text-sm font-black uppercase opacity-40">
-                    05 — Et la suite ?
+                    05 - Et la suite ?
                 </span>
 
                 <h2 className="mt-3 text-4xl font-black uppercase md:text-6xl">
@@ -275,7 +246,6 @@ export default function PortfolioV3Page() {
                     Certaines interactions et animations restent encore
                     à intégrer avant sa version finale.
                 </p>
-
             </section>
 
         </ProjectLayout>
