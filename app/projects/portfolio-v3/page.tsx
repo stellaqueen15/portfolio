@@ -137,7 +137,7 @@ export default function PortfolioV3Page() {
 
                 <div className="mt-10 grid gap-4 md:grid-cols-2">
                     <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
-                        <span className="text-3xl">🎨</span>
+                        <span className="text-3xl"><i className="fi fi-sr-palette"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Design → Code
@@ -151,7 +151,7 @@ export default function PortfolioV3Page() {
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-                        <span className="text-3xl">🧩</span>
+                        <span className="text-3xl"><i className="fi fi-sr-puzzle-alt"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Composants
@@ -165,7 +165,7 @@ export default function PortfolioV3Page() {
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-                        <span className="text-3xl">✨</span>
+                        <span className="text-3xl"><i className="fi fi-br-animated-icon"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Interactions
@@ -179,7 +179,7 @@ export default function PortfolioV3Page() {
 
 
                     <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
-                        <span className="text-3xl">📱</span>
+                        <span className="text-3xl"><i className="fi fi-sr-mobile-button"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Responsive
