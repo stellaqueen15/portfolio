@@ -35,7 +35,7 @@ export default function ProjectLayout({
 
             <div className="mx-auto flex max-w-[1600px]">
                 <aside className="sticky top-0 hidden h-screen w-90 shrink-0 p-6 lg:block">
-                    <div className="flex h-full flex-col justify-between rounded-4xl bg-light-gradient p-7 shadow-soft">
+                    <div className="flex h-full flex-col justify-between rounded-4xl bg-surface p-7 shadow-soft">
                         <div>
                             <Link
                                 href="/"
@@ -163,7 +163,7 @@ export default function ProjectLayout({
                             ← Retour
                         </Link>
 
-                        <div className="rounded-[28px] bg-light-gradient p-6 shadow-soft">
+                        <div className="rounded-[28px] bg-surface p-6 shadow-soft">
                             <div className="mb-5 flex items-start justify-between gap-4">
                                 <div className="flex min-w-0 items-center gap-3">
 

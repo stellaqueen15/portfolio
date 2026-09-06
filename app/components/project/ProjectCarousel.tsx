@@ -53,7 +53,7 @@ export default function ProjectCarousel({
                     return (
                         <div
                             key={screen.title}
-                            className={`absolute left-1/2 top-1/2 overflow-hidden rounded-4xl bg-light-gradient p-3
+                            className={`absolute left-1/2 top-1/2 overflow-hidden rounded-4xl bg-surface p-3
                                 shadow-soft transition-all duration-500 ease-out
                                 ${position === "active" ? `z-30 w-[75%] -translate-x-1/2
                                     -translate-y-1/2 scale-100 opacity-100`

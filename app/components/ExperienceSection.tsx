@@ -89,7 +89,7 @@ export default function ExperienceSection() {
                                     `}
                                 >
                                     <details
-                                        className="group rounded-[28px] bg-light-gradient shadow-soft p-5"
+                                        className="group rounded-[28px] bg-surface shadow-soft p-5"
                                     >
                                         <summary
                                             className="cursor-pointer list-none select-none"

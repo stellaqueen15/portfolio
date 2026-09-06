@@ -40,7 +40,7 @@ export default function PortfolioV3Page() {
             {/* APERÇU PRINCIPAL */}
             <section className="mb-24">
 
-                <div className="overflow-hidden rounded-4xl bg-light-gradient p-3 shadow-soft">
+                <div className="overflow-hidden rounded-4xl bg-surface p-3 shadow-soft">
 
                     <img
                         src="/Image.jpg"
@@ -98,7 +98,7 @@ export default function PortfolioV3Page() {
 
 
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
-                    <div className="overflow-hidden rounded-[28px] bg-light-gradient p-3 shadow-soft">
+                    <div className="overflow-hidden rounded-[28px] bg-surface p-3 shadow-soft">
                         <img
                             src="/Image.jpg"
                             alt="Maquette Figma du Portfolio V3"
@@ -136,7 +136,7 @@ export default function PortfolioV3Page() {
                 </h2>
 
                 <div className="mt-10 grid gap-4 md:grid-cols-2">
-                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-palette"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -150,7 +150,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-puzzle-alt"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -164,7 +164,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-br-animated-icon"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -178,7 +178,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-mobile-button"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">

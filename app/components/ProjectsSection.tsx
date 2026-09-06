@@ -56,7 +56,7 @@ export default function ProjectsSection() {
                             key={project.title}
                             className={`w-full md:w-[92%] ${offsets[index]}`}
                         >
-                            <div className="group overflow-hidden rounded-[50px] bg-light-gradient shadow-soft
+                            <div className="group overflow-hidden rounded-[50px] bg-surface shadow-soft
                                 backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
 
                                 <div className="grid min-h-[100px] grid-cols-1 md:grid-cols-[38%_1fr]">
