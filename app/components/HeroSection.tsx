@@ -5,15 +5,17 @@ import BackgroundParticles from "@/app/components/BackgroundParticles";
 
 export default function HeroSection() {
     return (
-        <section
-            className="relative flex h-screen items-center justify-center overflow-hidden bg-background px-6 pb-32"
-        >
+        <section className="relative flex h-screen min-h-[600px] items-center justify-center overflow-hidden bg-background px-4 pb-28 sm:px-6 sm:pb-32">
             <BackgroundParticles />
 
-            <div className="relative z-10 text-center">
+            <div className="relative z-10 w-full text-center">
                 <h1
-                    className="text-6xl font-black uppercase leading-[0.7] tracking-tighter sm:text-7xl
-                        md:text-8xl lg:text-[9rem]"
+                    className="
+                        text-5xl font-black uppercase leading-[0.75] tracking-tighter
+                        sm:text-6xl
+                        md:text-8xl
+                        lg:text-[9rem]
+                    "
                 >
                     <span className="inline-block w-full text-gradient">
                         Brenda
@@ -21,12 +23,20 @@ export default function HeroSection() {
 
                     <br />
 
-                    <span className="inline-block p-6 text-[6.5rem] text-gradient">
+                    <span
+                        className="
+                            inline-block px-2 py-4 text-4xl text-gradient
+                            sm:px-4 sm:py-5 sm:text-5xl
+                            md:px-6 md:py-6 md:text-7xl
+                            lg:text-[6.5rem]
+                        "
+                    >
                         Développeuse web
                     </span>
                 </h1>
             </div>
 
+            {/* Vague supérieure */}
             <motion.div
                 className="absolute bottom-20 left-[-2%] z-10 w-[104%]"
                 animate={{
@@ -40,7 +50,7 @@ export default function HeroSection() {
                 }}
             >
                 <svg
-                    className="block h-40 w-full"
+                    className="block h-24 w-full sm:h-32 md:h-40"
                     viewBox="0 0 1440 179"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +109,7 @@ export default function HeroSection() {
                 </svg>
             </motion.div>
 
+            {/* Vague inférieure */}
             <motion.div
                 className="absolute bottom-6 left-[-2%] z-0 w-[104%]"
                 animate={{
@@ -112,7 +123,7 @@ export default function HeroSection() {
                 }}
             >
                 <svg
-                    className="block h-40 w-full"
+                    className="block h-24 w-full sm:h-32 md:h-40"
                     viewBox="0 0 1440 234"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +153,7 @@ export default function HeroSection() {
                             <feColorMatrix
                                 in="SourceAlpha"
                                 type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 result="hardAlpha"
                             />
                             <feOffset dy="6" />
