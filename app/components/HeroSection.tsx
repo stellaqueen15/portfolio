@@ -1,23 +1,44 @@
+"use client";
+
+import { motion } from "framer-motion";
+import BackgroundParticles from "@/app/components/BackgroundParticles";
+
 export default function HeroSection() {
     return (
         <section
-            className="relative flex h-screen items-center justify-center overflow-hidden px-6 pb-32 bg-background">
+            className="relative flex h-screen items-center justify-center overflow-hidden bg-background px-6 pb-32"
+        >
+            <BackgroundParticles />
+
             <div className="relative z-10 text-center">
-                <h1 className="text-6xl font-black leading-[0.7] tracking-tighter uppercase
-                    sm:text-7xl md:text-8xl lg:text-[9rem]">
-                    <span className="inline-block text-gradient w-full">
+                <h1
+                    className="text-6xl font-black uppercase leading-[0.7] tracking-tighter sm:text-7xl
+                        md:text-8xl lg:text-[9rem]"
+                >
+                    <span className="inline-block w-full text-gradient">
                         Brenda
                     </span>
 
-                    <br/>
+                    <br />
 
-                    <span className="inline-block text-[6.5rem] text-gradient p-6">
+                    <span className="inline-block p-6 text-[6.5rem] text-gradient">
                         Développeuse web
                     </span>
                 </h1>
             </div>
 
-            <div className="absolute bottom-20 left-0 z-10 w-full overflow-hidden">
+            <motion.div
+                className="absolute bottom-20 left-[-2%] z-10 w-[104%]"
+                animate={{
+                    x: [0, -18, 12, 0],
+                    y: [0, 3, -2, 0],
+                }}
+                transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                }}
+            >
                 <svg
                     className="block h-40 w-full"
                     viewBox="0 0 1440 179"
@@ -42,16 +63,22 @@ export default function HeroSection() {
                             filterUnits="userSpaceOnUse"
                             colorInterpolationFilters="sRGB"
                         >
-                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                            <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                            />
                             <feColorMatrix
                                 in="SourceAlpha"
                                 type="matrix"
                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 result="hardAlpha"
                             />
-                            <feOffset dy="6"/>
-                            <feGaussianBlur stdDeviation="4.2"/>
-                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feOffset dy="6" />
+                            <feGaussianBlur stdDeviation="4.2" />
+                            <feComposite
+                                in2="hardAlpha"
+                                operator="out"
+                            />
                             <feColorMatrix
                                 type="matrix"
                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0"
@@ -70,9 +97,20 @@ export default function HeroSection() {
                         </filter>
                     </defs>
                 </svg>
-            </div>
+            </motion.div>
 
-            <div className="absolute bottom-6 left-0 z-0 w-full overflow-hidden">
+            <motion.div
+                className="absolute bottom-6 left-[-2%] z-0 w-[104%]"
+                animate={{
+                    x: [0, 20, -14, 0],
+                    y: [0, -3, 4, 0],
+                }}
+                transition={{
+                    duration: 10,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                }}
+            >
                 <svg
                     className="block h-40 w-full"
                     viewBox="0 0 1440 234"
@@ -107,8 +145,8 @@ export default function HeroSection() {
                                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                                 result="hardAlpha"
                             />
-                            <feOffset dy="6"/>
-                            <feGaussianBlur stdDeviation="4.2"/>
+                            <feOffset dy="6" />
+                            <feGaussianBlur stdDeviation="4.2" />
                             <feComposite
                                 in2="hardAlpha"
                                 operator="out"
@@ -131,7 +169,7 @@ export default function HeroSection() {
                         </filter>
                     </defs>
                 </svg>
-            </div>
+            </motion.div>
         </section>
-    )
+    );
 }
