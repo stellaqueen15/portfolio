@@ -4,36 +4,45 @@
 :root {
     --primary: #FF8B30;
     --secondary: #FFCC5E;
-    --secondary-foreground: #E16B10;
+
     --foreground: #3c2408;
+
+    --accent: #E16B10;
+
     --background: linear-gradient(
       180deg,
       #FFCC5E 0%,
       #ffb347 45%,
       #FF892F 100%
     );
+
     --background-reverse: linear-gradient(
       0deg,
       #FFCC5E 0%,
       #ffb347 45%,
       #FF892F 100%
     );
-    --light-gradient: linear-gradient(
+
+    --surface: linear-gradient(
       180deg,
       #ffffff 31.06%,
       #ffd375 150.59%
     );
+
     --shadow-soft: 0px 6px 8.4px rgba(0, 0, 0, 0.07);
 }
 
 @theme inline {
     --color-primary: var(--primary);
     --color-secondary: var(--secondary);
-    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-foreground: var(--foreground);
+
+    --color-accent: var(--accent);
+
     --background-image-background: var(--background);
     --background-image-background-reverse: var(--background-reverse);
-    --color-foreground: var(--foreground);
-    --background-image-light-gradient: var(--light-gradient);
+    --background-image-surface: var(--surface);
 
     --shadow-soft: var(--shadow-soft);
 
