@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
     {
         title: "Portfolio",
@@ -46,7 +48,7 @@ export default function ProjectsSection() {
             <div className="mx-auto max-w-7xl">
                 <div className="relative z-10 mb-12 text-center">
                     <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
-                        Ce que j'ai bricolé
+                        Ce que j&apos;ai bricolé
                     </h2>
                 </div>
 
@@ -59,11 +61,12 @@ export default function ProjectsSection() {
                             <div className="group overflow-hidden rounded-[50px] bg-surface shadow-soft
                                 backdrop-blur-md transition-transform duration-500 hover:-translate-y-1">
 
-                                <div className="grid min-h-[100px] grid-cols-1 md:grid-cols-[38%_1fr]">
-                                    <div className="relative m-4 min-h-[220px] max-w-100 overflow-hidden rounded-[30px] md:min-h-0">
-                                        <img
+                                <div className="grid min-h-25 grid-cols-1 md:grid-cols-[38%_1fr]">
+                                    <div className="relative m-4 min-h-55 max-w-100 overflow-hidden rounded-[30px] md:min-h-0">
+                                        <Image
                                             src={project.image}
                                             alt={project.title}
+                                            fill
                                             className="absolute inset-0 h-full w-full object-cover transition-transform
                                                 duration-500 group-hover:scale-105"
                                         />

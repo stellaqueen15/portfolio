@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type Screen = {
     image: string;
@@ -64,14 +65,12 @@ export default function ProjectCarousel({
                                 : `z-0 w-[55%] -translate-x-1/2 -translate-y-1/2 scale-75 opacity-0`}
                             `}
                         >
-                            <div className="overflow-hidden rounded-3xl">
-                                <img
+                            <div className="relative overflow-hidden rounded-3xl aspect-video">
+                                <Image
                                     src={screen.image}
-                                    alt={
-                                        screen.alt ??
-                                        screen.title
-                                    }
-                                    className="aspect-video w-full object-cover"
+                                    alt={screen.alt ?? screen.title}
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
 

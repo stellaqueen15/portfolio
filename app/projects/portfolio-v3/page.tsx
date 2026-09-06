@@ -1,5 +1,6 @@
 import ProjectLayout from "@/app/components/project/ProjectLayout";
 import ProjectCarousel from "@/app/components/project/ProjectCarousel";
+import Image from "next/image";
 
 export default function PortfolioV3Page() {
     return (
@@ -20,7 +21,6 @@ export default function PortfolioV3Page() {
 
             {/* HERO */}
             <section className="mb-20">
-
                 <span className="text-sm font-black uppercase opacity-40">
                     Une nouvelle version de moi-même
                 </span>
@@ -33,23 +33,20 @@ export default function PortfolioV3Page() {
                     Une expérience interactive pensée pour présenter mon
                     univers, mes projets et ma façon de concevoir le web.
                 </p>
-
             </section>
 
 
             {/* APERÇU PRINCIPAL */}
             <section className="mb-24">
-
                 <div className="overflow-hidden rounded-4xl bg-surface p-3 shadow-soft">
-
-                    <img
+                    <Image
                         src="/Image.jpg"
                         alt="Aperçu du Portfolio V3"
+                        width={1920}
+                        height={1080}
                         className="w-full rounded-3xl object-cover"
                     />
-
                 </div>
-
             </section>
 
 
@@ -66,14 +63,14 @@ export default function PortfolioV3Page() {
                 <div className="mt-6 space-y-4 text-lg font-medium leading-relaxed opacity-70">
                     <p>
                         Ce portfolio est avant tout un terrain de jeu pour
-                        expérimenter autour du design, de l'interaction et
+                        expérimenter autour du design, de l&apos;interaction et
                         du développement frontend.
                     </p>
 
                     <p>
-                        L'objectif est de créer une expérience qui reflète
+                        L&apos;objectif est de créer une expérience qui reflète
                         davantage ma personnalité et ma manière de travailler
-                        qu'un portfolio traditionnel.
+                        qu&apos;un portfolio traditionnel.
                     </p>
                 </div>
             </section>
@@ -91,18 +88,20 @@ export default function PortfolioV3Page() {
 
                 <p className="mt-6 max-w-3xl text-lg font-medium leading-relaxed opacity-70">
                     Une identité visuelle inspirée de mon intérêt pour
-                    l'art, le design et les interfaces interactives.
-                    L'interface mélange formes arrondies, couleurs chaudes,
+                    l&apos;art, le design et les interfaces interactives.
+                    L&apos;interface mélange formes arrondies, couleurs chaudes,
                     glassmorphism et animations.
                 </p>
 
 
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
                     <div className="overflow-hidden rounded-[28px] bg-surface p-3 shadow-soft">
-                        <img
+                        <Image
                             src="/Image.jpg"
                             alt="Maquette Figma du Portfolio V3"
-                            className="w-full rounded-[20px]"
+                            width={1920}
+                            height={1080}
+                            className="w-full rounded-[20px] object-cover"
                         />
                     </div>
 
@@ -112,12 +111,12 @@ export default function PortfolioV3Page() {
                         </p>
 
                         <p className="mt-4 text-2xl font-black">
-                            Une interface pensée avant d'être codée.
+                            Une interface pensée avant d&apos;être codée.
                         </p>
 
                         <p className="mt-4 font-medium leading-relaxed opacity-60">
                             Les différentes sections, composants et
-                            interactions sont d'abord explorés sur Figma
+                            interactions sont d&apos;abord explorés sur Figma
                             avant leur intégration dans Next.js.
                         </p>
                     </div>
@@ -144,11 +143,10 @@ export default function PortfolioV3Page() {
                         </h3>
 
                         <p className="mt-3 font-medium leading-relaxed opacity-65">
-                            Conception de l'interface sur Figma puis
+                            Conception de l&apos;interface sur Figma puis
                             intégration en Next.js.
                         </p>
                     </article>
-
 
                     <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-puzzle-alt"></i></span>
@@ -163,7 +161,6 @@ export default function PortfolioV3Page() {
                         </p>
                     </article>
 
-
                     <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-br-animated-icon"></i></span>
 
@@ -177,7 +174,6 @@ export default function PortfolioV3Page() {
                         </p>
                     </article>
 
-
                     <article className="rounded-3xl bg-surface p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-mobile-button"></i></span>
 
@@ -187,12 +183,11 @@ export default function PortfolioV3Page() {
 
                         <p className="mt-3 font-medium leading-relaxed opacity-65">
                             Une expérience adaptée aux différentes tailles
-                            d'écran.
+                            d&apos;écran.
                         </p>
                     </article>
                 </div>
             </section>
-
 
             {/* SCREENSHOTS */}
             <section className="mb-24">
@@ -228,7 +223,6 @@ export default function PortfolioV3Page() {
                     De nouvelles interactions, animations et améliorations sont progressivement intégrées afin de faire évoluer l’expérience.
                 </p>
             </section>
-
         </ProjectLayout>
     );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 type ProjectLayoutProps = {
     title: string;
@@ -58,10 +59,11 @@ export default function ProjectLayout({
 
                             <div className="rounded-3xl bg-white/40 p-5">
                                 <div className="mb-6 text-center">
-                                    <div className="mx-auto mb-4 h-28 w-full overflow-hidden rounded-[20px]">
-                                        <img
+                                    <div className="relative mx-auto mb-4 h-28 w-full overflow-hidden rounded-[20px]">
+                                        <Image
                                             src="/Image.jpg"
                                             alt={title}
+                                            fill
                                             className="h-full w-full object-cover"
                                         />
                                     </div>
