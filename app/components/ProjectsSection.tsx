@@ -110,7 +110,7 @@ export default function ProjectsSection() {
                                                         rel="noopener noreferrer"
                                                         className="flex items-center justify-center rounded-xl
                                                         border-2 border-primary px-3 text-sm font-bold
-                                                        text-secondary-foreground transition-all duration-200
+                                                        text-accent transition-all duration-200
                                                         hover:-translate-y-0.5 hover:bg-white/30"
                                                     >
                                                         Voir la démo ↗
