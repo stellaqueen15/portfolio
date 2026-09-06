@@ -82,7 +82,7 @@ export default function PortfolioV3Page() {
             {/* DIRECTION ARTISTIQUE */}
             <section className="mb-24">
                 <span className="text-sm font-black uppercase text-foreground/60">
-                    02 — Direction artistique
+                    02 - Direction artistique
                 </span>
 
                 <h2 className="mt-3 text-4xl font-black uppercase md:text-6xl">
@@ -128,7 +128,7 @@ export default function PortfolioV3Page() {
             {/* DÉVELOPPEMENT */}
             <section className="mb-24">
                 <span className="text-sm font-black uppercase text-foreground/60">
-                    03 — Développement
+                    03 - Développement
                 </span>
 
                 <h2 className="mt-3 text-4xl font-black uppercase md:text-6xl">
@@ -197,7 +197,7 @@ export default function PortfolioV3Page() {
             {/* SCREENSHOTS */}
             <section className="mb-24">
                 <span className="text-sm font-black uppercase text-foreground/60">
-                    04 — Aperçus
+                    04 - Aperçus
                 </span>
 
                 <h2 className="mt-3 text-4xl font-black uppercase md:text-6xl">
@@ -224,9 +224,8 @@ export default function PortfolioV3Page() {
                 </h2>
 
                 <p className="mt-6 max-w-2xl text-lg font-medium leading-relaxed opacity-60">
-                    Le portfolio est actuellement en développement.
-                    Certaines interactions et animations restent encore
-                    à intégrer avant sa version finale.
+                    Le portfolio est encore en cours d’évolution.
+                    De nouvelles interactions, animations et améliorations sont progressivement intégrées afin de faire évoluer l’expérience.
                 </p>
             </section>
 
