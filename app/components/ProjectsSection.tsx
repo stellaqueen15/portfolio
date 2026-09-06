@@ -71,7 +71,7 @@ export default function ProjectsSection() {
 
                                     <div className="flex flex-col justify-between p-2 md:p-4">
                                         <div>
-                                            <h3 className="text-3xl font-black uppercase md:text-4xl">
+                                            <h3 className="text-3xl font-black md:text-4xl">
                                                 {project.title}
                                             </h3>
 
