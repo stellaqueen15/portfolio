@@ -60,7 +60,7 @@ export default function ExperienceSection() {
             id="experiences"
             className="relative min-h-screen overflow-hidden px-6 py-20 bg-background">
             <div className="relative z-10 mb-12 text-center">
-                <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
+                <h2 className="text-5xl p-6 text-gradient uppercase font-black tracking-tight md:text-7xl">
                     Oui, j&apos;ai travaillé
                 </h2>
             </div>
