@@ -61,13 +61,13 @@ export default function ExperienceSection() {
             className="relative min-h-screen overflow-hidden px-6 py-20 bg-background">
             <div className="relative z-10 mb-12 text-center">
                 <h2 className="text-5xl text-gradient uppercase font-black tracking-tight md:text-7xl">
-                    Oui, j'ai travaillé
+                    Oui, j&apos;ai travaillé
                 </h2>
             </div>
 
             <div className="relative mx-auto max-w-5xl">
                 <div
-                    className="absolute left-1/2 top-0 h-full w-[4px] -translate-x-1/2 rounded-full bg-secondary
+                    className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 rounded-full bg-secondary
                         shadow-[0_0_10px_rgba(255,255,255,0.25)]"
                 />
 
@@ -131,7 +131,7 @@ export default function ExperienceSection() {
                                                     + Voir les détails
                                                 </span>
 
-                                                <span className="hidden group-open:inline">
+                                                <span className="hidden">
                                                     − Réduire
                                                 </span>
                                             </div>
