@@ -40,12 +40,12 @@ export default function PortfolioV3Page() {
             {/* APERÇU PRINCIPAL */}
             <section className="mb-24">
 
-                <div className="overflow-hidden rounded-[32px] bg-light-gradient p-3 shadow-soft">
+                <div className="overflow-hidden rounded-4xl bg-light-gradient p-3 shadow-soft">
 
                     <img
                         src="/Image.jpg"
                         alt="Aperçu du Portfolio V3"
-                        className="w-full rounded-[24px] object-cover"
+                        className="w-full rounded-3xl object-cover"
                     />
 
                 </div>
@@ -150,7 +150,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-puzzle-alt"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -164,7 +164,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-br-animated-icon"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -178,7 +178,7 @@ export default function PortfolioV3Page() {
                     </article>
 
 
-                    <article className="rounded-[24px] bg-light-gradient p-6 shadow-soft">
+                    <article className="rounded-3xl bg-light-gradient p-6 shadow-soft">
                         <span className="text-3xl"><i className="fi fi-sr-mobile-button"></i></span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
@@ -214,7 +214,7 @@ export default function PortfolioV3Page() {
 
 
             {/* ÉTAT DU PROJET */}
-            <section className="mb-24 rounded-[32px] bg-foreground p-8 text-white md:p-12">
+            <section className="mb-24 rounded-4xl bg-foreground p-8 text-white md:p-12">
                 <span className="text-sm font-black uppercase opacity-40">
                     05 - Et la suite ?
                 </span>
