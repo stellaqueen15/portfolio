@@ -88,12 +88,8 @@ export default function ExperienceSection() {
                                     }
                                     `}
                                 >
-                                    <details
-                                        className="group rounded-[28px] bg-surface shadow-soft p-5"
-                                    >
-                                        <summary
-                                            className="cursor-pointer list-none select-none"
-                                        >
+                                    <details className="group rounded-[28px] bg-surface shadow-soft p-5">
+                                        <summary className="cursor-pointer list-none select-none">
                                             <div
                                                 className="text-[11px] font-semibold uppercase tracking-wider opacity-60">
                                                 {experience.date}

@@ -1,6 +1,7 @@
 import ProjectLayout from "@/app/components/project/ProjectLayout";
 import ProjectCarousel from "@/app/components/project/ProjectCarousel";
 import Image from "next/image";
+import SurfaceCard from "@/app/components/ui/SurfaceCard";
 
 export default function PortfolioV3Page() {
     return (
@@ -38,7 +39,7 @@ export default function PortfolioV3Page() {
 
             {/* APERÇU PRINCIPAL */}
             <section className="mb-24">
-                <div className="overflow-hidden rounded-4xl bg-surface p-3 shadow-soft">
+                <SurfaceCard>
                     <Image
                         src="/Image.jpg"
                         alt="Aperçu du Portfolio V3"
@@ -46,7 +47,7 @@ export default function PortfolioV3Page() {
                         height={1080}
                         className="w-full rounded-3xl object-cover"
                     />
-                </div>
+                </SurfaceCard>
             </section>
 
 
@@ -95,7 +96,7 @@ export default function PortfolioV3Page() {
 
 
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
-                    <div className="overflow-hidden rounded-[28px] bg-surface p-3 shadow-soft">
+                    <SurfaceCard>
                         <Image
                             src="/Image.jpg"
                             alt="Maquette Figma du Portfolio V3"
@@ -103,9 +104,9 @@ export default function PortfolioV3Page() {
                             height={1080}
                             className="w-full rounded-[20px] object-cover"
                         />
-                    </div>
+                    </SurfaceCard>
 
-                    <div className="rounded-[28px] bg-foreground p-7 text-white">
+                    <div className="rounded-4xl bg-foreground p-7 text-white">
                         <p className="text-sm font-black uppercase opacity-40">
                             Design system
                         </p>
@@ -135,8 +136,10 @@ export default function PortfolioV3Page() {
                 </h2>
 
                 <div className="mt-10 grid gap-4 md:grid-cols-2">
-                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
-                        <span className="text-3xl"><i className="fi fi-sr-palette"></i></span>
+                    <SurfaceCard className="p-6">
+                        <span className="text-3xl">
+                            <i className="fi fi-sr-palette"></i>
+                        </span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Design → Code
@@ -146,10 +149,12 @@ export default function PortfolioV3Page() {
                             Conception de l&apos;interface sur Figma puis
                             intégration en Next.js.
                         </p>
-                    </article>
+                    </SurfaceCard>
 
-                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
-                        <span className="text-3xl"><i className="fi fi-sr-puzzle-alt"></i></span>
+                    <SurfaceCard className="p-6">
+                        <span className="text-3xl">
+                            <i className="fi fi-sr-puzzle-alt"></i>
+                        </span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Composants
@@ -159,10 +164,12 @@ export default function PortfolioV3Page() {
                             Une architecture pensée autour de composants
                             réutilisables et cohérents.
                         </p>
-                    </article>
+                    </SurfaceCard>
 
-                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
-                        <span className="text-3xl"><i className="fi fi-br-animated-icon"></i></span>
+                    <SurfaceCard className="p-6">
+                        <span className="text-3xl">
+                            <i className="fi fi-br-animated-icon"></i>
+                        </span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Interactions
@@ -172,10 +179,12 @@ export default function PortfolioV3Page() {
                             Animations et transitions pour rendre la
                             navigation plus vivante.
                         </p>
-                    </article>
+                    </SurfaceCard>
 
-                    <article className="rounded-3xl bg-surface p-6 shadow-soft">
-                        <span className="text-3xl"><i className="fi fi-sr-mobile-button"></i></span>
+                    <SurfaceCard className="p-6">
+                        <span className="text-3xl">
+                            <i className="fi fi-sr-mobile-button"></i>
+                        </span>
 
                         <h3 className="mt-5 text-2xl font-black uppercase">
                             Responsive
@@ -185,7 +194,7 @@ export default function PortfolioV3Page() {
                             Une expérience adaptée aux différentes tailles
                             d&apos;écran.
                         </p>
-                    </article>
+                    </SurfaceCard>
                 </div>
             </section>
 

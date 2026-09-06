@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import SurfaceCard from "@/app/components/ui/SurfaceCard";
 
 type Screen = {
     image: string;
@@ -52,9 +53,9 @@ export default function ProjectCarousel({
                     const position = getPosition(index);
 
                     return (
-                        <div
+                        <SurfaceCard
                             key={screen.title}
-                            className={`absolute left-1/2 top-1/2 overflow-hidden rounded-4xl bg-surface p-3
+                            className={`absolute left-1/2 top-1/2 overflow-hidden
                                 shadow-soft transition-all duration-500 ease-out
                                 ${position === "active" ? `z-30 w-[75%] -translate-x-1/2
                                     -translate-y-1/2 scale-100 opacity-100`
@@ -79,7 +80,7 @@ export default function ProjectCarousel({
                                     {screen.title}
                                 </p>
                             )}
-                        </div>
+                        </SurfaceCard>
                     );
                 })}
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Image from "next/image";
+import SurfaceCard from "@/app/components/ui/SurfaceCard";
 
 type ProjectLayoutProps = {
     title: string;
@@ -36,7 +37,7 @@ export default function ProjectLayout({
 
             <div className="mx-auto flex max-w-[1600px]">
                 <aside className="sticky top-0 hidden h-screen w-90 shrink-0 p-6 lg:block">
-                    <div className="flex h-full flex-col justify-between rounded-4xl bg-surface p-7 shadow-soft">
+                    <SurfaceCard className="flex h-full flex-col justify-between p-6">
                         <div>
                             <Link
                                 href="/"
@@ -150,7 +151,7 @@ export default function ProjectLayout({
 
                         </div>
 
-                    </div>
+                    </SurfaceCard>
 
                 </aside>
 
