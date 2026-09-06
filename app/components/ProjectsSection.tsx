@@ -2,15 +2,15 @@ const projects = [
     {
         title: "Portfolio",
         description: "Un portfolio pensé comme une expérience interactive.",
-        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
+        image: "/Image.jpg",
         tags: ["Next.js", "TypeScript", "Tailwind"],
         demo: "https://example.com",
-        slug: "portfolio",
+        slug: "portfolio-v3",
     },
     {
         title: "Influencer Dashboard",
         description: "Dashboard B2B pour visualiser et analyser des données.",
-        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
+        image: "/Image.jpg",
         tags: ["Next.js", "React", "MSW"],
         demo: "https://example.com",
         slug: "influencer-dashboard",
@@ -18,7 +18,7 @@ const projects = [
     {
         title: "API Project",
         description: "Application web basée sur une API et des données dynamiques.",
-        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
+        image: "/Image.jpg",
         tags: ["React", "API", "TypeScript"],
         demo: "https://example.com",
         slug: "api-project",
@@ -26,7 +26,7 @@ const projects = [
     {
         title: "RP Admin Tool",
         description: "Interface d’administration pensée pour simplifier la gestion.",
-        image: "https://get.pxhere.com/photo/web-domain-service-website-development-seo-access-backup-data-database-e-commerce-hosting-html-http-marketing-programming-provider-resource-server-storage-support-system-tech-technology-www-illustration-sharing-electronic-device-business-learning-graphic-design-job-1571969.jpg",
+        image: "/Image.jpg",
         tags: ["Next.js", "UI/UX", "Tailwind"],
         demo: "https://example.com",
         slug: "rp-admin-tool",
