@@ -1,4 +1,5 @@
 import ProjectLayout from "@/app/components/project/ProjectLayout";
+import ProjectCarousel from "@/app/components/project/ProjectCarousel";
 
 export default function PortfolioV3Page() {
     return (
@@ -203,31 +204,12 @@ export default function PortfolioV3Page() {
                     Quelques morceaux du projet
                 </h2>
 
-                <div className="mt-10 space-y-6">
-                    <div className="overflow-hidden rounded-[32px] bg-light-gradient p-3 shadow-soft">
-                        <img
-                            src="/Image.jpg"
-                            alt="Section expérience du Portfolio V3"
-                            className="w-full rounded-[24px]"
-                        />
-                    </div>
-
-                    <div className="overflow-hidden rounded-[32px] bg-light-gradient p-3 shadow-soft">
-                        <img
-                            src="/Image.jpg"
-                            alt="Section projets du Portfolio V3"
-                            className="w-full rounded-[24px]"
-                        />
-                    </div>
-
-                    <div className="overflow-hidden rounded-[32px] bg-light-gradient p-3 shadow-soft">
-                        <img
-                            src="/Image.jpg"
-                            alt="Section compétences du Portfolio V3"
-                            className="w-full rounded-[24px]"
-                        />
-                    </div>
-                </div>
+                <ProjectCarousel
+                    screens={[
+                        { image: "/Image.jpg", title: "Expérience", },
+                        { image: "/Image.jpg", title: "Projets", },
+                        { image: "/Image.jpg", title: "Compétences", }, ]
+                    } />
             </section>
 
 
