@@ -20,6 +20,8 @@ export default function Home() {
           <SkillsSection />
 
           <AboutSection />
+
+          <Footer />
       </main>
   );
 }
