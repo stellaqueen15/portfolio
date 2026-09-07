@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Mascot() {
     return (
         <motion.div
-            className="relative h-64 w-130 md:h-80 md:w-155"
+            className="relative h-36 w-72 sm:h-44 sm:w-88 md:h-80 md:w-155"
             animate={{
                 y: [0, -10, 5, 0],
                 rotate: [0, 1, -1, 0],
@@ -23,7 +23,6 @@ export default function Mascot() {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
             >
-
                 <circle
                     cx="155"
                     cy="75"
@@ -77,14 +76,20 @@ export default function Mascot() {
                     strokeWidth="29"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d=" M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z "
-                    animate={{d:[` M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z `, ` M 58 180 C 130 150 200 158 302 158 C 404 158 474 150 547 180 C 535 212 480 229 420 234 C 350 240 255 240 185 234 C 125 229 70 212 58 180 Z `, ` M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z `,],}}
+                    d="M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z"
+                    animate={{
+                        d: [
+                            `M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z`,
+                            `M 58 180 C 130 150 200 158 302 158 C 404 158 474 150 547 180 C 535 212 480 229 420 234 C 350 240 255 240 185 234 C 125 229 70 212 58 180 Z`,
+                            `M 70 180 C 135 158 200 164 302 164 C 404 164 470 158 535 180 C 525 205 475 220 420 225 C 350 231 255 231 185 225 C 130 220 80 205 70 180 Z`,
+                        ],
+                    }}
                     transition={{
                         duration: 3,
                         repeat: Infinity,
                         repeatType: "mirror",
-                        ease: "easeInOut",}
-                    }
+                        ease: "easeInOut",
+                    }}
                 />
             </svg>
         </motion.div>
