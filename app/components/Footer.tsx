@@ -14,7 +14,7 @@ export default function Footer() {
 
                 <div className="flex flex-wrap justify-center gap-3">
                     <a
-                        href="https://github.com/..."
+                        href="https://github.com/stellaqueen15"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-white/20 px-5 py-2.5 font-bold transition hover:-translate-y-1 hover:bg-white/30"
@@ -23,7 +23,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/..."
+                        href="https://www.linkedin.com/in/brenda-k-74364734a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-white/20 px-5 py-2.5 font-bold transition hover:-translate-y-1 hover:bg-white/30"
@@ -32,7 +32,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="mailto:ton@email.com"
+                        href="mailto:brendamisenga@gmail.com"
                         className="rounded-full bg-white/20 px-5 py-2.5 font-bold transition hover:-translate-y-1 hover:bg-white/30"
                     >
                         Email ↗
