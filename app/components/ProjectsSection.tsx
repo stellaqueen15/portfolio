@@ -28,7 +28,7 @@ const projects = [
     {
         title: "Soccershop",
         description: "Une application e-commerce de football réalisée en équipe, avec une interface entièrement conçue et développée par mes soins.",
-        image: "/Image.jpg",
+        image: "/projects/soccershop/Home.png",
         tags: ["HTML", "CSS", "PHP"],
         demo: "https://youtu.be/qR940fKm1r4",
         slug: "soccershop",

@@ -12,6 +12,7 @@ export default function SoccerShopPage() {
             status="Terminé"
             statusColor="green"
             role="Frontend · UI/UX · QA"
+            image="/projects/soccershop/Home.png"
             technologies={[
                 "HTML",
                 "CSS",
@@ -42,7 +43,7 @@ export default function SoccerShopPage() {
             <section className="mb-24">
                 <SurfaceCard>
                     <Image
-                        src="/Image.jpg"
+                        src="/projects/soccershop/Home.png"
                         alt="Aperçu de SoccerShop"
                         width={1920}
                         height={1080}
@@ -108,7 +109,7 @@ export default function SoccerShopPage() {
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
                     <SurfaceCard>
                         <Image
-                            src="/Image.jpg"
+                            src="/projects/soccershop/Figma_Design.png"
                             alt="Maquette Figma de SoccerShop"
                             width={1920}
                             height={1080}
@@ -385,16 +386,16 @@ export default function SoccerShopPage() {
                 <ProjectCarousel
                     screens={[
                         {
-                            image: "/Image.jpg",
-                            title: "Accueil",
-                        },
-                        {
-                            image: "/Image.jpg",
+                            image: "/projects/soccershop/Boutique.png",
                             title: "Boutique",
                         },
                         {
-                            image: "/Image.jpg",
+                            image: "/projects/soccershop/Produit.png",
                             title: "Produit",
+                        },
+                        {
+                            image: "/projects/soccershop/Dashboard.png",
+                            title: "Dashboard",
                         },
                     ]}
                 />
