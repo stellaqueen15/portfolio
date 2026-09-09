@@ -40,7 +40,7 @@ export default function ProjectLayout({
                     <SurfaceCard className="flex h-full flex-col justify-between p-6">
                         <div>
                             <Link
-                                href="/"
+                                href="/#projects"
                                 className="mb-5 inline-flex items-center gap-2 text-sm font-bold opacity-50 transition-opacity hover:opacity-100"
                             >
                                 ← Retour
