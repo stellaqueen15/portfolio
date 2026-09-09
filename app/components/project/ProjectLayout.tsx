@@ -10,6 +10,7 @@ type ProjectLayoutProps = {
     status: string;
     statusColor?: "orange" | "green" | "yellow";
     role: string;
+    image: string;
     technologies: string[];
     demo?: string;
     children: ReactNode;
@@ -28,6 +29,7 @@ export default function ProjectLayout({
     status,
     statusColor = "orange",
     role,
+    image,
     technologies,
     demo,
     children,
@@ -62,7 +64,7 @@ export default function ProjectLayout({
                                 <div className="mb-6 text-center">
                                     <div className="relative mx-auto mb-4 h-28 w-full overflow-hidden rounded-[20px]">
                                         <Image
-                                            src="/Image.jpg"
+                                            src={image}
                                             alt={title}
                                             fill
                                             className="h-full w-full object-cover"
