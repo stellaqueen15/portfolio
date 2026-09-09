@@ -26,12 +26,12 @@ const projects = [
         slug: "site-vitrine",
     },
     {
-        title: "RP Admin Tool",
-        description: "Interface d’administration pensée pour simplifier la gestion.",
+        title: "Soccershop",
+        description: "Une application e-commerce de football réalisée en équipe, avec une interface entièrement conçue et développée par mes soins.",
         image: "/Image.jpg",
-        tags: ["Next.js", "UI/UX", "Tailwind"],
-        demo: "https://example.com",
-        slug: "rp-admin-tool",
+        tags: ["HTML", "CSS", "PHP"],
+        demo: "https://youtu.be/qR940fKm1r4",
+        slug: "soccershop",
     },
 ];
 
