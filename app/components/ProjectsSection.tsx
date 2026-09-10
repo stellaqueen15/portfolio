@@ -20,7 +20,7 @@ const projects = [
     {
         title: "Site vitrine",
         description: "Site vitrine multilingue pensé pour présenter clairement les services d’une interprète et traductrice chinoise.",
-        image: "/Image.jpg",
+        image: "/projects/site-vitrine/Home.png",
         tags: ["React", "API", "TypeScript"],
         demo: "https://exemple-site-vitrine.netlify.app/",
         slug: "site-vitrine",

@@ -12,6 +12,7 @@ export default function SiteVitrinePage() {
             status="Terminé"
             statusColor="green"
             role="UI/UX · Développement Frontend"
+            image="/projects/site-vitrine/Home.png"
             technologies={[
                 "SvelteKit",
                 "Tailwind CSS",
@@ -42,7 +43,7 @@ export default function SiteVitrinePage() {
             <section className="mb-24">
                 <SurfaceCard>
                     <Image
-                        src="/Image.jpg"
+                        src="/projects/site-vitrine/Home.png"
                         alt="Aperçu du site vitrine"
                         width={1920}
                         height={1080}
@@ -106,7 +107,7 @@ export default function SiteVitrinePage() {
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
                     <SurfaceCard>
                         <Image
-                            src="/Image.jpg"
+                            src="/projects/site-vitrine/Services.png"
                             alt="Interface du site vitrine"
                             width={1920}
                             height={1080}
@@ -310,16 +311,16 @@ export default function SiteVitrinePage() {
                 <ProjectCarousel
                     screens={[
                         {
-                            image: "/Image.jpg",
-                            title: "Accueil",
+                            image: "/projects/site-vitrine/Tarifs.png",
+                            title: "Tarifs",
                         },
                         {
-                            image: "/Image.jpg",
+                            image: "/projects/site-vitrine/Services.png",
                             title: "Services",
                         },
                         {
-                            image: "/Image.jpg",
-                            title: "Présentation",
+                            image: "/projects/site-vitrine/A_Propos.png",
+                            title: "À propos",
                         },
                     ]}
                 />
