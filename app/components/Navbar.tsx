@@ -17,7 +17,7 @@ const linkClassName = `
 
 export default function Navbar() {
     return (
-        <nav className="absolute left-0 top-0 z-20 w-full px-3 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6">
+        <nav className="fixed left-0 top-0 z-50 w-full px-3 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6">
             <div className="relative mx-auto flex max-w-7xl items-center justify-center">
                 <div
                     className="
