@@ -1,5 +1,5 @@
-import ProjectLayout from "@/app/components/project/ProjectLayout";
-import ProjectCarousel from "@/app/components/project/ProjectCarousel";
+import ProjectLayout from "@/app/components/projects/ProjectLayout";
+import ProjectCarousel from "@/app/components/projects/ProjectCarousel";
 import Image from "next/image";
 import SurfaceCard from "@/app/components/ui/SurfaceCard";
 
