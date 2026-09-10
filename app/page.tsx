@@ -1,10 +1,10 @@
-import Navbar from "@/app/components/Navbar";
+import Navbar from "@/app/components/layout/Navbar";
 import HeroSection from "@/app/components/HeroSection";
 import ExperienceSection from "@/app/components/ExperienceSection";
 import ProjectsSection from "@/app/components/project/ProjectsSection";
 import SkillsSection from "@/app/components/skills/SkillsSection";
 import AboutSection from "@/app/components/AboutSection";
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/layout/Footer";
 
 export default function Home() {
   return (
