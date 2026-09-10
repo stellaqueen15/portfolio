@@ -49,6 +49,10 @@
     --font-baloo: var(--font-baloo-2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--primary);
     color: var(--foreground);
