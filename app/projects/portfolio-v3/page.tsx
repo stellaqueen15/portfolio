@@ -12,6 +12,7 @@ export default function PortfolioV3Page() {
             status="En développement"
             statusColor="yellow"
             role="UI/UX · Développement Frontend"
+            image="/projects/portfolio/Home.png"
             technologies={[
                 "Next.js",
                 "TypeScript",
@@ -41,7 +42,7 @@ export default function PortfolioV3Page() {
             <section className="mb-24">
                 <SurfaceCard>
                     <Image
-                        src="/Image.jpg"
+                        src="/projects/portfolio/Home.png"
                         alt="Aperçu du Portfolio V3"
                         width={1920}
                         height={1080}

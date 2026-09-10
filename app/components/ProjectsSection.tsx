@@ -4,9 +4,9 @@ const projects = [
     {
         title: "Portfolio",
         description: "Un portfolio pensé comme une expérience interactive.",
-        image: "/Image.jpg",
+        image: "/projects/portfolio/Home.png",
         tags: ["Next.js", "TypeScript", "Tailwind"],
-        demo: "https://example.com",
+        demo: undefined,
         slug: "portfolio-v3",
     },
     {
