@@ -150,11 +150,8 @@ export default function ProjectLayout({
                             >
                                 Tous les projets
                             </Link>
-
                         </div>
-
                     </SurfaceCard>
-
                 </aside>
 
                 <section className="min-w-0 flex-1 px-6 py-8 md:px-10 lg:px-12">
