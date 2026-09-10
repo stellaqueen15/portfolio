@@ -2,65 +2,14 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Mascot from "../Mascot";
+import Mascot from "../ui/Mascot";
+import {
+    defaultContent,
+    aboutItems,
+    mobilePositions,
+} from "@/app/data/about";
 
-const defaultContent = {
-    title: "Coucou, c'est moi.",
-    description:
-        "Développeuse web junior, créative et curieuse, j'aime comprendre comment les choses fonctionnent et surtout leur donner une vraie personnalité.",
-};
-
-const items = [
-    {
-        label: "Créative",
-        x: "7%",
-        y: "28%",
-        rotation: -6,
-        delay: 0,
-        title: "J'aime créer.",
-        description:
-            "J'ai toujours eu un intérêt pour le visuel, le design et la création. Aujourd'hui, j'aime mélanger cette sensibilité avec le développement pour créer des expériences qui ont du caractère.",
-    },
-    {
-        label: "UI / UX",
-        x: "78%",
-        y: "25%",
-        rotation: 5,
-        delay: 0.8,
-        title: "L'interface, ça compte.",
-        description:
-            "Je m'intéresse particulièrement à la façon dont une interface fonctionne, se ressent et guide l'utilisateur. J'aime autant réfléchir à l'expérience qu'à la manière de la construire.",
-    },
-    {
-        label: "Curieuse",
-        x: "10%",
-        y: "67%",
-        rotation: 4,
-        delay: 1.2,
-        title: "Toujours envie d'apprendre.",
-        description:
-            "Quand quelque chose m'intrigue, j'ai tendance à vouloir comprendre comment ça fonctionne. Nouvelles technos, animations, design ou outils : j'aime expérimenter.",
-    },
-    {
-        label: "Exploratrice",
-        x: "80%",
-        y: "65%",
-        rotation: -5,
-        delay: 0.4,
-        title: "J'aime découvrir.",
-        description:
-            "J'aime sortir, découvrir de nouveaux endroits et tester de nouvelles expériences : un resto, une activité, un quartier que je ne connais pas encore... Je suis toujours partante pour explorer.",
-    },
-];
-
-const mobilePositions = [
-    { x: "3%", y: "27%" },
-    { x: "74%", y: "27%" },
-    { x: "4%", y: "56%" },
-    { x: "74%", y: "56%" },
-];
-
-function FloatingItem({ label, x, y, rotation, delay, onClick, active }: (typeof items)[number] & { onClick: () => void; active: boolean }) {
+function FloatingItem({ label, x, y, rotation, delay, onClick, active }: (typeof aboutItems)[number] & { onClick: () => void; active: boolean }) {
     return (
         <motion.button
             type="button"
@@ -95,7 +44,7 @@ function Star({ x, y, size = "text-xl", delay = 0 }: { x: string; y: string; siz
 }
 
 export default function AboutSection() {
-    const [activeItem, setActiveItem] = useState<(typeof items)[number] | null>(null);
+    const [activeItem, setActiveItem] = useState<(typeof aboutItems)[number] | null>(null);
 
     const content = activeItem ?? defaultContent;
 
@@ -135,7 +84,7 @@ export default function AboutSection() {
                     sm:h-2 sm:w-2" />
 
                 <div className="md:hidden">
-                    {items.map((item, index) => {
+                    {aboutItems.map((item, index) => {
                         const position = mobilePositions[index];
 
                         return (
@@ -151,7 +100,7 @@ export default function AboutSection() {
                 </div>
 
                 <div className="hidden md:block">
-                    {items.map((item) => (
+                    {aboutItems.map((item) => (
                         <FloatingItem
                             key={item.label}
                             {...item}

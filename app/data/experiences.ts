@@ -1,0 +1,55 @@
+export const experiences = [
+    {
+        date: "Févr. 2026 - Aujourd’hui",
+        title: "Développeuse web junior",
+        company: "Echos Virtuels",
+        type: "Expérience professionnelle",
+        tags: ["Web", "Frontend", "Backend"],
+        details: [
+            "60 000+ utilisateurs sur une application en production",
+            "Modélisation de données relationnelles",
+            "Composants UI accessibles & tests automatisés",
+            "Implémentation de fonctionnalités complexes",
+        ],
+    },
+    {
+        date: "2022 - 2025",
+        title: "DEC en Informatique",
+        company: "Collège Ahuntsic",
+        type: "Formation",
+        tags: ["Web", "Mobile", "UI/UX"],
+        details: [
+            "Développement d’applications web et mobiles",
+            "Conception et structuration de bases de données",
+            "Programmation orientée objet",
+            "Conception d’interfaces et expérience utilisateur",
+            "Travail sur des projets individuels et en équipe",
+        ],
+    },
+    {
+        date: "Mars 2025 - Mai 2025",
+        title: "Stagiaire en développement web",
+        company: "Nuagerie Inc.",
+        type: "Stage",
+        tags: ["Web", "Frontend", "API"],
+        details: [
+            "Conception et développement de landing pages",
+            "Refonte et amélioration d’interfaces existantes",
+            "Internationalisation (i18n) et optimisation des performances",
+            "Optimisation du SEO et de l’expérience utilisateur",
+        ],
+    },
+    {
+        date: "Juin 2023 - Déc. 2024",
+        title: "Graphiste",
+        company: "HabboCity",
+        type: "Expérience",
+        tags: ["Graphisme", "UI", "Design"],
+        details: [
+            "Création d’éléments graphiques pour la plateforme",
+            "Conception d’interfaces et d’éléments visuels",
+            "Création de contenus adaptés à l’univers du jeu",
+            "Travail autour de l’identité visuelle et de l’expérience utilisateur",
+        ],
+    },
+];

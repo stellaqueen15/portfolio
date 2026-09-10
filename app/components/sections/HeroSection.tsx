@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import BackgroundParticles from "@/app/components/BackgroundParticles";
+import BackgroundParticles from "@/app/components/ui/BackgroundParticles";
 
 const floatingItems = [
     {
