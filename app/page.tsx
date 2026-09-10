@@ -1,9 +1,9 @@
 import Navbar from "@/app/components/layout/Navbar";
-import HeroSection from "@/app/components/HeroSection";
-import ExperienceSection from "@/app/components/ExperienceSection";
-import ProjectsSection from "@/app/components/projects/ProjectsSection";
-import SkillsSection from "@/app/components/skills/SkillsSection";
-import AboutSection from "@/app/components/AboutSection";
+import HeroSection from "@/app/components/sections/HeroSection";
+import ExperienceSection from "@/app/components/sections/ExperienceSection";
+import ProjectsSection from "@/app/components/sections/ProjectsSection";
+import SkillsSection from "@/app/components/sections/SkillsSection";
+import AboutSection from "@/app/components/sections/AboutSection";
 import Footer from "@/app/components/layout/Footer";
 
 export default function Home() {

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Mascot from "./Mascot";
+import Mascot from "../Mascot";
 
 const defaultContent = {
     title: "Coucou, c'est moi.",
