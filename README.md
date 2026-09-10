@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✨ Brenda - Portfolio
 
-## Getting Started
+My personal portfolio showcasing my work, experience and skills as a **Junior Frontend Developer**.
 
-First, run the development server:
+Designed and developed from scratch with a focus on **UI/UX, responsive design, accessibility and interactive experiences**.
+
+## 🌐 Live Website
+
+**[Visit my portfolio](https://portfolio-brendakm.vercel.app/)**
+
+## 🛠️ Built With
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **Framer Motion**
+* **Figma**
+
+## 🎨 Design & Development
+
+The portfolio was first designed in **Figma** and then translated into a responsive, interactive web experience.
+
+Some of the main goals were:
+
+* 🎨 Creating a distinctive and playful visual identity
+* 📱 Building a responsive experience across devices
+* ♿ Keeping the interface accessible and easy to navigate
+* ✨ Adding animations and interactions without compromising usability
+* 🧩 Structuring reusable components
+* ⚡ Maintaining good performance and a clean codebase
+
+## 📂 Structure
+
+The portfolio includes:
+
+* **Home** - Introduction and personal identity
+* **Projects** - Selected projects and case studies
+* **Experience** - Education and professional experience
+* **Skills** - Technologies and tools I work with
+* **About** - More about me and my background
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/stellaqueen15/portfolio.git
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚧 **Portfolio currently in development.**
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I'm continuously refining the design, animations and content as I grow as a frontend developer.
