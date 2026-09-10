@@ -99,7 +99,7 @@ export default function PortfolioV3Page() {
                 <div className="mt-10 grid gap-5 md:grid-cols-2">
                     <SurfaceCard>
                         <Image
-                            src="/Image.jpg"
+                            src="/projects/portfolio/Home.png"
                             alt="Maquette Figma du Portfolio V3"
                             width={1920}
                             height={1080}
@@ -211,9 +211,9 @@ export default function PortfolioV3Page() {
 
                 <ProjectCarousel
                     screens={[
-                        { image: "/Image.jpg", title: "Expérience", },
-                        { image: "/Image.jpg", title: "Projets", },
-                        { image: "/Image.jpg", title: "Compétences", }, ]
+                        { image: "/projects/portfolio/A_Propos.png", title: "Expérience", },
+                        { image: "/projects/portfolio/Projets.png", title: "Projets", },
+                        { image: "/projects/portfolio/Competences.png", title: "Compétences", }, ]
                     } />
             </section>
 
