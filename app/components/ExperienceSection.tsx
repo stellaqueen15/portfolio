@@ -85,9 +85,7 @@ export default function ExperienceSection() {
                                 md:min-h-37.5 md:grid-cols-2 md:items-center"
                             >
                                 {/* Carte */}
-                                <div className={`ml-8 md:ml-0 ${isLeft ? "md:col-start-1 md:mr-10" +
-                                        "md:text-right" : "md:col-start-2 md:ml-10 md:text-left"}`}
-                                    >
+                                <div className={`ml-8 md:ml-0 ${isLeft ? "md:col-start-1 md:mr-16 md:text-right" : "md:col-start-2 md:ml-16 md:text-left"}`}>
                                     <details className="group rounded-3xl bg-surface p-4 shadow-soft sm:rounded-[28px] sm:p-5">
                                         <summary className="cursor-pointer list-none select-none">
                                             <div className="text-[10px] font-semibold uppercase tracking-wider opacity-60
@@ -130,7 +128,7 @@ export default function ExperienceSection() {
                                                     + Voir les détails
                                                 </span>
 
-                                                <span className="hidden">
+                                                <span className="hidden group-open:inline">
                                                     − Réduire
                                                 </span>
                                             </div>
