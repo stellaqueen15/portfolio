@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projects } from "@/app/data/projects";
+import AnimatedProject from "@/app/components/AnimatedProject";
 
 export default function ProjectsSection() {
     const offsets = [
@@ -23,9 +24,10 @@ export default function ProjectsSection() {
 
                 <div className="flex flex-col gap-6 sm:gap-8">
                     {projects.map((project, index) => (
-                        <article
+                        <AnimatedProject
                             key={project.title}
                             className={`w-full md:w-[92%] ${offsets[index]}`}
+                            index={index}
                         >
                             <div className="group overflow-hidden rounded-[30px] bg-surface shadow-soft backdrop-blur-md
                                     transition-transform duration-500 hover:-translate-y-1 sm:rounded-[40px] md:rounded-[50px]"
@@ -43,7 +45,6 @@ export default function ProjectsSection() {
                                         />
                                     </div>
 
-                                    {/* Content */}
                                     <div className="flex flex-col justify-between p-4 sm:p-5 md:p-4">
                                         <div>
                                             <h3 className="text-2xl font-black sm:text-3xl md:text-4xl">
@@ -55,11 +56,9 @@ export default function ProjectsSection() {
                                             </p>
                                         </div>
 
-                                        {/* Tags + buttons */}
                                         <div className="mt-5 flex flex-col gap-4 sm:mt-6 md:mr-3 md:flex-row md:items-center
                                             md:justify-between md:gap-6"
                                         >
-                                            {/* Tags */}
                                             <div className="flex flex-wrap gap-2">
                                                 {project.tags.map((tag) => (
                                                     <span
@@ -72,7 +71,6 @@ export default function ProjectsSection() {
                                                 ))}
                                             </div>
 
-                                            {/* Buttons */}
                                             <div className="flex flex-wrap gap-2 sm:gap-3">
                                                 <a
                                                     href={`/projects/${project.slug}`}
@@ -100,7 +98,7 @@ export default function ProjectsSection() {
                                     </div>
                                 </div>
                             </div>
-                        </article>
+                        </AnimatedProject>
                     ))}
                 </div>
             </div>
