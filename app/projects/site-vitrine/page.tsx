@@ -17,6 +17,7 @@ export default function SiteVitrinePage() {
                 "Tailwind CSS",
                 "i18n",
             ]}
+            demo="https://exemple-site-vitrine.netlify.app/"
         >
 
             {/* HERO */}

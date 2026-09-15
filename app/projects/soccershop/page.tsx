@@ -19,6 +19,7 @@ export default function SoccerShopPage() {
                 "MySQL",
                 "Figma",
             ]}
+            demo="https://youtu.be/qR940fKm1r4"
         >
 
             {/* HERO */}

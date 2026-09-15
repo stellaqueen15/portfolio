@@ -11,6 +11,7 @@ type ProjectLayoutProps = {
     role: string;
     technologies: string[];
     github?: string;
+    demo?: string;
     children: ReactNode;
 };
 
@@ -29,6 +30,7 @@ export default function ProjectLayout({
     role,
     technologies,
     github,
+    demo,
     children,
 }: ProjectLayoutProps) {
     return (
@@ -132,12 +134,14 @@ export default function ProjectLayout({
                                 </a>
                             )}
 
-                            <Link
-                                href="/#projects"
-                                className="flex w-full items-center justify-center rounded-full border-2 border-primary px-5 py-3 font-bold text-primary transition-all hover:bg-white/30"
-                            >
-                                Tous les projets
-                            </Link>
+                            {demo && (
+                                <a
+                                    href={demo}
+                                    className="flex w-full items-center justify-center rounded-full border-2 border-primary px-5 py-3 font-bold text-primary transition-all hover:bg-white/30"
+                                >
+                                    Voir la démo
+                                </a>
+                            )}
                         </div>
                     </SurfaceCard>
                 </aside>
