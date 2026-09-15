@@ -12,7 +12,6 @@ export default function SiteVitrinePage() {
             status="Terminé"
             statusColor="green"
             role="UI/UX · Développement Frontend"
-            image="/projects/site-vitrine/Home.png"
             technologies={[
                 "SvelteKit",
                 "Tailwind CSS",

@@ -12,7 +12,6 @@ export default function SoccerShopPage() {
             status="Terminé"
             statusColor="green"
             role="Frontend · UI/UX · QA"
-            image="/projects/soccershop/Home.png"
             technologies={[
                 "HTML",
                 "CSS",

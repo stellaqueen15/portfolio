@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import Image from "next/image";
 import SurfaceCard from "@/app/components/ui/SurfaceCard";
 
 type ProjectLayoutProps = {
@@ -10,7 +9,6 @@ type ProjectLayoutProps = {
     status: string;
     statusColor?: "orange" | "green" | "yellow";
     role: string;
-    image: string;
     technologies: string[];
     github?: string;
     children: ReactNode;
@@ -29,7 +27,6 @@ export default function ProjectLayout({
     status,
     statusColor = "orange",
     role,
-    image,
     technologies,
     github,
     children,
@@ -62,15 +59,6 @@ export default function ProjectLayout({
 
                             <div className="rounded-3xl bg-white/40 p-5">
                                 <div className="mb-6 text-center">
-                                    <div className="relative mx-auto mb-4 h-28 w-full overflow-hidden rounded-[20px]">
-                                        <Image
-                                            src={image}
-                                            alt={title}
-                                            fill
-                                            className="h-full w-full object-cover"
-                                        />
-                                    </div>
-
                                     <p className="text-2xl font-black uppercase leading-none">
                                         {title}
                                     </p>

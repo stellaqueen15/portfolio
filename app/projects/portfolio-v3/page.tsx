@@ -12,7 +12,6 @@ export default function PortfolioV3Page() {
             status="En développement"
             statusColor="yellow"
             role="UI/UX · Développement Frontend"
-            image="/projects/portfolio/Home.png"
             technologies={[
                 "Next.js",
                 "TypeScript",

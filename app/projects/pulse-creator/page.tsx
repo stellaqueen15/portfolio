@@ -12,7 +12,6 @@ export default function PulseCreatorPage() {
             status="En développement"
             statusColor="yellow"
             role="UI/UX · Développement Frontend"
-            image="/Image.jpg"
             technologies={[
                 "Next.js",
                 "React",
