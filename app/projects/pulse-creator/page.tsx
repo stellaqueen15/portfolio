@@ -20,6 +20,7 @@ export default function PulseCreatorPage() {
                 "Tailwind CSS",
                 "MSW",
             ]}
+            github="https://github.com/stellaqueen15/pulse_creator"
         >
 
             {/* HERO */}

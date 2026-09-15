@@ -12,7 +12,7 @@ type ProjectLayoutProps = {
     role: string;
     image: string;
     technologies: string[];
-    demo?: string;
+    github?: string;
     children: ReactNode;
 };
 
@@ -31,7 +31,7 @@ export default function ProjectLayout({
     role,
     image,
     technologies,
-    demo,
+    github,
     children,
 }: ProjectLayoutProps) {
     return (
@@ -133,14 +133,14 @@ export default function ProjectLayout({
                         {/* BOTTOM */}
                         <div className="space-y-3">
 
-                            {demo && (
+                            {github && (
                                 <a
-                                    href={demo}
+                                    href={github}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex w-full items-center justify-center rounded-full bg-foreground px-5 py-3 font-bold text-white transition-transform hover:-translate-y-0.5"
                                 >
-                                    Voir le projet ↗
+                                    Voir sur Github ↗
                                 </a>
                             )}
 

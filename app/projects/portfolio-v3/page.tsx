@@ -19,6 +19,7 @@ export default function PortfolioV3Page() {
                 "Tailwind CSS",
                 "Figma",
             ]}
+            github="https://github.com/stellaqueen15/portfolio"
         >
 
             {/* HERO */}
