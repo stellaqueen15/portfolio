@@ -14,9 +14,7 @@ type ProjectCarouselProps = {
     screens: Screen[];
 };
 
-export default function ProjectCarousel({
-    screens,
-}: ProjectCarouselProps) {
+export default function ProjectCarousel({screens,}: ProjectCarouselProps) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const previous = () => {
@@ -46,27 +44,33 @@ export default function ProjectCarousel({
     };
 
     return (
-        <div className="mt-10">
+        <div className="mt-8 sm:mt-10">
             {/* CAROUSEL */}
-            <div className="relative h-140 overflow-hidden">
+            <div className="relative h-auto min-h-72 sm:h-140">
                 {screens.map((screen, index) => {
                     const position = getPosition(index);
 
                     return (
                         <SurfaceCard
                             key={screen.title}
-                            className={`absolute left-1/2 top-1/2 overflow-hidden
+                            className={`
+                                absolute left-1/2 top-1/2 overflow-hidden
                                 shadow-soft transition-all duration-500 ease-out
-                                ${position === "active" ? `z-30 w-[75%] -translate-x-1/2
-                                    -translate-y-1/2 scale-100 opacity-100`
-                                : position === "previous" ? `z-10 w-[55%] translate-x-[-85%]
-                                    -translate-y-1/2 scale-90 opacity-50` 
-                                : position === "next" ? `z-10 w-[55%] translate-x-[-15%]
-                                    -translate-y-1/2 scale-90 opacity-50`
-                                : `z-0 w-[55%] -translate-x-1/2 -translate-y-1/2 scale-75 opacity-0`}
+
+                                ${
+                                position === "active"
+                                    ? `z-30 w-[calc(100%-3.5rem)] -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 sm:w-[75%]`
+                                    : position === "previous"
+                                        ? `z-10 hidden sm:block sm:w-[55%] sm:translate-x-[-85%] sm:-translate-y-1/2
+                                            sm:scale-90 sm:opacity-50`
+                                        : position === "next"
+                                            ? `z-10 hidden sm:block sm:w-[55%] sm:translate-x-[-15%] sm:-translate-y-1/2
+                                                sm:scale-90 sm:opacity-50`
+                                            : `z-0 hidden`
+                            }
                             `}
                         >
-                            <div className="relative overflow-hidden rounded-3xl aspect-video">
+                            <div className="relative aspect-video overflow-hidden rounded-3xl">
                                 <Image
                                     src={screen.image}
                                     alt={screen.alt ?? screen.title}
@@ -76,7 +80,7 @@ export default function ProjectCarousel({
                             </div>
 
                             {position === "active" && (
-                                <p className="px-2 pb-1 pt-3 text-center text-sm font-black uppercase">
+                                <p className="px-3 py-3 text-center text-xs font-black uppercase sm:px-2 sm:pb-1 sm:pt-3 sm:text-sm">
                                     {screen.title}
                                 </p>
                             )}
@@ -84,30 +88,33 @@ export default function ProjectCarousel({
                     );
                 })}
 
+                {/* PREVIOUS */}
                 <button
                     type="button"
                     onClick={previous}
                     aria-label="Aperçu précédent"
-                    className="absolute left-4 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center
-                        rounded-full bg-foreground text-xl text-white shadow-soft transition-transform hover:scale-105"
+                    className="absolute left-0 top-1/2 z-40 flex h-10 w-10 -translate-y-1/2 items-center justify-center
+                        rounded-full bg-foreground text-lg text-white shadow-soft transition-transform hover:scale-105
+                        sm:left-4 sm:h-12 sm:w-12 sm:text-xl"
                 >
                     ←
                 </button>
 
+                {/* NEXT */}
                 <button
                     type="button"
                     onClick={next}
                     aria-label="Aperçu suivant"
-                    className=" absolute right-4 top-1/2 z-40 flex h-12 w-12 -translate-y-1/2 items-center justify-center
-                        rounded-full bg-foreground text-xl text-white shadow-soft transition-transform hover:scale-105"
+                    className="absolute right-0 top-1/2 z-40 flex h-10 w-10 -translate-y-1/2 items-center justify-center
+                        rounded-full bg-foreground text-lg text-white shadow-soft transition-transform hover:scale-105
+                        sm:right-4 sm:h-12 sm:w-12 sm:text-xl"
                 >
                     →
                 </button>
             </div>
 
-
             {/* INDICATORS */}
-            <div className="mt-2 flex items-center justify-center gap-2">
+            <div className="mt-4 flex items-center justify-center gap-2">
                 {screens.map((screen, index) => (
                     <button
                         key={screen.title}
@@ -115,11 +122,7 @@ export default function ProjectCarousel({
                         onClick={() => setActiveIndex(index)}
                         aria-label={`Afficher ${screen.title}`}
                         className={`h-2 rounded-full transition-all duration-300
-                            ${
-                                index === activeIndex
-                                    ? "w-8 bg-foreground"
-                                    : "w-2 bg-foreground/30"
-                            }
+                            ${index === activeIndex ? "w-7 bg-foreground sm:w-8" : "w-2 bg-foreground/30"}
                         `}
                     />
                 ))}
