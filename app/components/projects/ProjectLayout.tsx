@@ -158,45 +158,67 @@ export default function ProjectLayout({
                         </Link>
 
                         <div className="rounded-[28px] bg-surface p-6 shadow-soft">
-                            <div className="mb-5 flex items-start justify-between gap-4">
-                                <div className="flex min-w-0 items-center gap-3">
+                            <div className="mb-5">
+                                <div className="mb-3 flex items-center justify-between gap-3">
+                                    <span className="text-xs font-black uppercase opacity-40">
+                                        Projet {number}
+                                    </span>
 
-                                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-xl">
-                                        🖥️
-                                    </div>
-
-                                    <div className="min-w-0">
-                                        <span className="text-xs font-black uppercase opacity-40">
-                                            Projet {number}
-                                        </span>
-
-                                        <h1 className="truncate text-3xl font-black uppercase leading-none">
-                                            {title}
-                                        </h1>
-                                    </div>
+                                    <span
+                                        className={`shrink-0 rounded-full px-3 py-1 text-xs font-black uppercase ${statusStyles[statusColor]}`}
+                                    >
+                                        {status}
+                                    </span>
                                 </div>
 
-                                <span
-                                    className={`shrink-0 rounded-full px-3 py-1 text-xs font-black uppercase ${statusStyles[statusColor]}`}
-                                >
-                                    {status}
-                                </span>
-
+                                <h1 className="text-3xl font-black uppercase leading-[0.95] break-words">
+                                    {title}
+                                </h1>
                             </div>
 
                             <p className="text-sm font-bold opacity-60">
                                 {role}
                             </p>
 
-                            <div className="mt-4 flex flex-wrap gap-2">
-                                {technologies.map((tech) => (
-                                    <span
-                                        key={tech}
-                                        className="rounded-lg border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary"
+                            <div className="mt-4">
+                                <p className="mb-2 text-xs font-black uppercase opacity-40">
+                                    Technologies
+                                </p>
+
+                                <div className="flex flex-wrap gap-2">
+                                    {technologies.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="rounded-lg border border-primary/30 bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="mt-5 space-y-3">
+                                {github && (
+                                    <a
+                                        href={github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex w-full items-center justify-center rounded-full bg-foreground px-5 py-3 font-bold text-white transition-transform hover:-translate-y-0.5"
                                     >
-                                        {tech}
-                                    </span>
-                                ))}
+                                        Voir sur GitHub ↗
+                                    </a>
+                                )}
+
+                                {demo && (
+                                    <a
+                                        href={demo}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex w-full items-center justify-center rounded-full border-2 border-primary px-5 py-3 font-bold text-primary transition-all hover:bg-white/30"
+                                    >
+                                        Voir la démo ↗
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
