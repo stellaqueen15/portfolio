@@ -26,7 +26,7 @@ const floatingItems = [
         rotate: 4,
     },
     {
-        label: "React",
+        label: "Laravel",
         className: "right-[6%] top-[62%] sm:right-[12%] md:right-[15%] md:top-[67%]",
         delay: 0.4,
         duration: 7.5,
@@ -115,7 +115,7 @@ export default function HeroSection() {
                     </h1>
 
                     <p className="mt-6 text-sm font-bold uppercase tracking-wide text-foreground/60 sm:mt-8 sm:text-base md:text-lg">
-                        Je fais des sites. Des fois, ils sont même beaux.
+                        Du frontend au backend. Et parfois, tout fonctionne du premier coup !
                     </p>
                 </motion.div>
             </div>
