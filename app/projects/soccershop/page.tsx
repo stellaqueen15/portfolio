@@ -6,7 +6,7 @@ import SurfaceCard from "@/app/components/ui/SurfaceCard";
 export default function SoccerShopPage() {
     return (
         <ProjectLayout
-            number="04"
+            number="03"
             title="SoccerShop"
             year="2025"
             status="Terminé"

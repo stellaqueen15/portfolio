@@ -6,7 +6,7 @@ import SurfaceCard from "@/app/components/ui/SurfaceCard";
 export default function SiteVitrinePage() {
     return (
         <ProjectLayout
-            number="03"
+            number="04"
             title="Site vitrine"
             year="2025"
             status="Terminé"

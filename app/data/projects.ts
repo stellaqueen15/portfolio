@@ -19,16 +19,6 @@ export const projects = [
         status: "En développement",
     },
     {
-        title: "Site vitrine",
-        description:
-            "Site vitrine multilingue pensé pour présenter clairement les services d’une interprète et traductrice chinoise.",
-        image: "/projects/site-vitrine/Home.png",
-        tags: ["React", "API", "TypeScript"],
-        demo: "https://exemple-site-vitrine.netlify.app/",
-        slug: "site-vitrine",
-        status: "Terminé",
-    },
-    {
         title: "Soccershop",
         description:
             "Une application e-commerce de football réalisée en équipe, avec une interface entièrement conçue et développée par mes soins.",
@@ -36,6 +26,16 @@ export const projects = [
         tags: ["HTML", "CSS", "PHP"],
         demo: "https://youtu.be/qR940fKm1r4",
         slug: "soccershop",
+        status: "Terminé",
+    },
+    {
+        title: "Site vitrine",
+        description:
+            "Site vitrine multilingue pensé pour présenter clairement les services d’une interprète et traductrice chinoise.",
+        image: "/projects/site-vitrine/Home.png",
+        tags: ["React", "API", "TypeScript"],
+        demo: "https://exemple-site-vitrine.netlify.app/",
+        slug: "site-vitrine",
         status: "Terminé",
     },
 ];
