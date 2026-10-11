@@ -1,7 +1,7 @@
 export const defaultContent = {
     title: "Coucou, c'est moi.",
     description:
-        "Développeuse web junior, créative et curieuse, j'aime comprendre comment les choses fonctionnent et surtout leur donner une vraie personnalité.",
+        "J'aime créer, comprendre, imaginer et explorer. Que ce soit à travers le code, un projet qui me passionne ou une nouvelle expérience, j'aime donner vie aux idées et découvrir tout ce qu'elles peuvent devenir.",
 };
 
 export const aboutItems = [
@@ -11,19 +11,19 @@ export const aboutItems = [
         y: "28%",
         rotation: -6,
         delay: 0,
-        title: "J'aime créer.",
+        title: "J'aime donner vie aux idées.",
         description:
-            "J'ai toujours eu un intérêt pour le visuel, le design et la création. Aujourd'hui, j'aime mélanger cette sensibilité avec le développement pour créer des expériences qui ont du caractère.",
+            "J'aime partir d'une idée et la transformer en quelque chose de concret, avec sa propre identité. Que ce soit en imaginant une interface, en construisant une fonctionnalité ou en travaillant sur un projet personnel, j'aime quand la technique et la créativité se rencontrent.",
     },
     {
-        label: "UI / UX",
+        label: "Fullstack",
         x: "78%",
         y: "25%",
         rotation: 5,
         delay: 0.8,
-        title: "L'interface, ça compte.",
+        title: "J'aime voir l'ensemble.",
         description:
-            "Je m'intéresse particulièrement à la façon dont une interface fonctionne, se ressent et guide l'utilisateur. J'aime autant réfléchir à l'expérience qu'à la manière de la construire.",
+            "Ce qui me plaît dans le développement, c'est de comprendre comment tout s'assemble. De l'interface que l'on utilise à la logique qui travaille en coulisses, j'aime explorer les différentes facettes d'un projet et voir les idées prendre vie de bout en bout.",
     },
     {
         label: "Curieuse",
@@ -31,9 +31,9 @@ export const aboutItems = [
         y: "67%",
         rotation: 4,
         delay: 1.2,
-        title: "Toujours envie d'apprendre.",
+        title: "J'ai toujours mille questions.",
         description:
-            "Quand quelque chose m'intrigue, j'ai tendance à vouloir comprendre comment ça fonctionne. Nouvelles technos, animations, design ou outils : j'aime expérimenter.",
+            "Pourquoi ça fonctionne comme ça ? Et si j'essayais autrement ? J'aime comprendre ce que je fais, expérimenter et découvrir de nouvelles façons de résoudre un problème. Quand un sujet m'intéresse, j'ai naturellement envie d'aller plus loin.",
     },
     {
         label: "Exploratrice",
@@ -41,9 +41,9 @@ export const aboutItems = [
         y: "65%",
         rotation: -5,
         delay: 0.4,
-        title: "J'aime découvrir.",
+        title: "J'aime sortir de ma routine.",
         description:
-            "J'aime sortir, découvrir de nouveaux endroits et tester de nouvelles expériences : un resto, une activité, un quartier que je ne connais pas encore... Je suis toujours partante pour explorer.",
+            "J'aime découvrir de nouveaux endroits, essayer des activités et rencontrer des gens. Que ce soit un resto, une soirée jeux ou un endroit que je ne connais pas, je trouve qu'il y a quelque chose de chouette à se laisser surprendre et à essayer de nouvelles choses.",
     },
 ];
 
