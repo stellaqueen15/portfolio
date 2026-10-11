@@ -8,6 +8,14 @@ export const projects = [
         slug: "portfolio-v3",
     },
     {
+        title: "Story Haven",
+        description: "Plateforme communautaire dédiée à la créativité, au partage d’histoires et à la création d’univers fictifs.",
+        image: "/Image.jpg",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+        demo: undefined,
+        slug: "story-haven",
+    },
+    {
         title: "Site vitrine",
         description: "Site vitrine multilingue pensé pour présenter clairement les services d’une interprète et traductrice chinoise.",
         image: "/projects/site-vitrine/Home.png",
@@ -22,13 +30,5 @@ export const projects = [
         tags: ["HTML", "CSS", "PHP"],
         demo: "https://youtu.be/qR940fKm1r4",
         slug: "soccershop",
-    },
-    {
-        title: "Story Haven",
-        description: "Plateforme communautaire dédiée à la créativité, au partage d’histoires et à la création d’univers fictifs.",
-        image: "/Image.jpg",
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-        demo: undefined,
-        slug: "story-haven",
     },
 ];
