@@ -66,3 +66,70 @@ body {
 
     filter: drop-shadow(0 5px 8px rgba(255, 137, 47, 0.57));
 }
+
+/* Supprime le marqueur natif du résumé */
+.experience-details summary::-webkit-details-marker {
+   display: none;
+}
+
+.experience-details summary {
+    list-style: none;
+}
+
+/* Animation réversible de l'accordéon */
+.experience-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+            grid-template-rows 380ms cubic-bezier(0.22, 1, 0.36, 1),
+            opacity 240ms ease;
+}
+
+.experience-details[open] .experience-panel {
+    grid-template-rows: 1fr;
+    opacity: 1;
+}
+
+.experience-panel-inner {
+    min-height: 0;
+    overflow: hidden;
+    transform: translateY(-5px);
+    transition: transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.experience-details[open] .experience-panel-inner {
+    transform: translateY(0);
+}
+
+/* Flèche */
+.experience-chevron {
+    transition: transform 280ms ease;
+}
+
+.experience-details[open] .experience-chevron {
+    transform: rotate(180deg);
+}
+
+/* Libellés */
+.experience-close-label {
+    display: none;
+}
+
+.experience-details[open] .experience-open-label {
+    display: none;
+}
+
+.experience-details[open] .experience-close-label {
+    display: inline;
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    .experience-panel,
+    .experience-panel-inner,
+    .experience-chevron {
+        transition: none;
+        transform: none;
+    }
+}
