@@ -47,9 +47,21 @@ export default function ProjectsSection() {
 
                                     <div className="flex flex-col justify-between p-4 sm:p-5 md:p-4">
                                         <div>
-                                            <h3 className="text-2xl font-black sm:text-3xl md:text-4xl">
-                                                {project.title}
-                                            </h3>
+                                            <div className="mb-2 flex flex-wrap items-center gap-3">
+                                                <h3 className="text-2xl font-black sm:text-3xl md:text-4xl">
+                                                    {project.title}
+                                                </h3>
+
+                                                <span
+                                                    className={`rounded-full px-3 py-1 text-xs font-bold ${
+                                                        project.status === "Terminé"
+                                                            ? "bg-green-500/10 text-green-600"
+                                                            : "bg-amber-500/10 text-amber-600"
+                                                    }`}
+                                                >
+                                                    {project.status}
+                                                </span>
+                                            </div>
 
                                             <p className="max-w-xl text-sm font-medium opacity-70 sm:text-base md:text-lg">
                                                 {project.description}
