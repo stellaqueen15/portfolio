@@ -24,11 +24,11 @@ export const projects = [
         slug: "soccershop",
     },
     {
-        title: "Influencer Dashboard",
-        description: "Dashboard B2B pour visualiser et analyser des données.",
+        title: "Story Haven",
+        description: "Plateforme communautaire dédiée à la créativité, au partage d’histoires et à la création d’univers fictifs.",
         image: "/Image.jpg",
-        tags: ["Next.js", "React", "MSW"],
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
         demo: undefined,
-        slug: "pulse-creator",
+        slug: "story-haven",
     },
 ];
